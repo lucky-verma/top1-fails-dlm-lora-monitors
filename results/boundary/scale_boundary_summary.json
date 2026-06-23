@@ -1,0 +1,67 @@
+{
+  "_canonical_eff_batch": 64,
+  "_description": "Cross-architecture scale boundary for the DLM-PEFT operating window. 5 models evaluated at scoped budgets.",
+  "_generated": "2026-05-08",
+  "_schema": "scale_boundary_summary_v1",
+  "interpretation": "The operating window is a model-class characterization, not a universal DLM LoRA law. Loss-side high-mask disadvantage replicates on 3 of 5 architectures; gradient-side U-shape varies; the 130M dense scale falls below the boundary.",
+  "models": {
+    "dream7b": {
+      "cells": 60,
+      "high_mask_loss_disadv": "yes (+0.92 to +1.99 holdout deltas)",
+      "lr_grid": true,
+      "model_class": "7B dense",
+      "n_seeds": 1,
+      "params_total": "7B",
+      "primary_source": "eval/w7_progress_analysis_20260505.json",
+      "rank_amp_high_rho": "direction-mixed",
+      "u_shape_grad_norm": "yes loss-side at lr=1e-4",
+      "verdict": "cross-arch loss-side replicates"
+    },
+    "llada20mini": {
+      "cells": 60,
+      "extra": "12 cells with K1-opt n=10",
+      "high_mask_loss_disadv": "yes (+14-31%, n=3)",
+      "model_class": "1.4B-active MoE",
+      "n_seeds": 3,
+      "params_total": "16B",
+      "primary_source": "eval/b1b_full_paper_table_20260508.json",
+      "rank_amp_high_rho": "directional 1.19x at rho=0.95 n=3 std wide",
+      "u_shape_grad_norm": "yes (direct)",
+      "verdict": "primary surface"
+    },
+    "llada21mini": {
+      "cells": 4,
+      "high_mask_loss_disadv": "yes (4-cell transfer)",
+      "model_class": "1.4B-active MoE",
+      "n_seeds": 3,
+      "params_total": "16B",
+      "primary_source": "eval/k101_integration_20260507.json",
+      "rank_amp_high_rho": "directional",
+      "u_shape_grad_norm": "not tested",
+      "verdict": "transfer holds"
+    },
+    "llada_moe_a1b": {
+      "cells": 12,
+      "high_mask_loss_disadv": "no (loss-side flat)",
+      "model_class": "1.4B small-MoE",
+      "n_seeds": 3,
+      "params_total": "7B",
+      "primary_source": "eval/k11b_llada_moe_a1b_3seed_20260508.json",
+      "rank_amp_high_rho": "1.89-2.47x direction-mixed",
+      "u_shape_grad_norm": "yes gradient-side",
+      "verdict": "gradient-only; softens"
+    },
+    "mdlm130m": {
+      "cells": 4,
+      "extra": "supplemented with n=3 KT-replication",
+      "high_mask_loss_disadv": "no (n=3 refutes single-seed lr-pilot)",
+      "model_class": "dense small",
+      "n_seeds": 7,
+      "params_total": "130M",
+      "primary_source": "results/peft_results_mdlm_pilot_3seed/seed_1337/mdlm_r4_m0p4_s1337.json",
+      "rank_amp_high_rho": "0.46x at n=3 INVERTED",
+      "u_shape_grad_norm": "no (variance-dominated)",
+      "verdict": "scale boundary; refutes"
+    }
+  }
+}

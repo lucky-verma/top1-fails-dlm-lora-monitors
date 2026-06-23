@@ -1,0 +1,31 @@
+{
+  "baseline_k15a_matched_27": {
+    "final_loss_median": 3.9809,
+    "fire_rate": "27/27",
+    "fire_step_median": 11,
+    "max_grad_median": 20.5342,
+    "n_cells": 27,
+    "step0_top1_mean": 0.3585
+  },
+  "compute_summary": "MDLM-OWT 130M, institutional HPC 12 lanes, ~6 min wall for 27 cells. Theory-motivated by Round-10 Pre-Equilibrium Saturation Theorem derivation.",
+  "grid": "r in {4,16,64} x rho in {0.05,0.40,0.90} x n=3 seeds = 27 cells",
+  "intervention_stats": {
+    "final_loss_median": 2.2581,
+    "fire_rate": "27/27",
+    "fire_step_median": 11,
+    "max_grad_median": 24.9671,
+    "mean_top1_traj_median": 0.6121,
+    "n_cells": 27,
+    "paired_delta_final_loss_median": 0.0427,
+    "paired_delta_fire_step_median": 0,
+    "paired_max_grad_ratio_median": 1.0429,
+    "step0_top1_mean": 0.5121,
+    "top1_at_199_median": 0.6484
+  },
+  "mechanism_implication": "Confidence-on-target weighting does not break positive-feedback loop on our finetune data because pretrained's confident-on-target is rare. This rules out one specific operationalization of the loss-weighting axis. Different operationalization (weight by entropy or by argmax-confidence) tested in K15t.",
+  "preregistered_threshold": "WORKS: fire-rate <27/27 + final-loss bounded. PARTIAL: fire-step >20. DOESN'T: fire 27/27 + fire-step ~11.",
+  "schema": "K15s confidence-aware loss weighting: weight masked-CE per masked position by (1 - p_pretrained(target|x))^W with W=1.0. Theory-motivated intervention to break positive-feedback at confident-pretrained-target positions. MDLM-OWT 130M, 27 cells.",
+  "ts_utc": "2026-05-21T03:27:57Z",
+  "verdict": "NEGATIVE (13th honest negative)",
+  "verdict_explanation": "DOESN'T: fire 27/27, paired fire-step delta 0, paired max-grad ratio 1.04, paired final-loss delta +0.04. Confidence-aware loss weighting essentially a no-op at W=1.0 because on finetune corpus, pretrained p(target|x) is typically LOW (target tokens are not in pretrained's confident-predictions), so weights ~1 everywhere. Implementation matches theoretical sketch but the weights collapse to ~baseline on the data we tested. Possible v2 fix: weight by (1 - p_pretrained(argmax|x)) instead, but this is a different theoretical mechanism."
+}

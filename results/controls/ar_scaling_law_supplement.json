@@ -1,0 +1,302 @@
+{
+  "decision_ref": "Lucky 2026-05-17 21:35Z \u2014 appendix supplement only",
+  "excluded": {
+    "pythia_160m": "K129 KILLED \u2014 undertrained at lr=1e-4"
+  },
+  "experiment": "K130_ar_scaling_law_5point_appendix_supplement",
+  "fits": {
+    "r16_m010": {
+      "fit": {
+        "a": 0.46331035840988943,
+        "k": 0.17239996739814648,
+        "r2": 0.4636350416625944
+      },
+      "mask_ratio": 0.1,
+      "n_points": 5,
+      "points": [
+        {
+          "max_grad_mean": 16.764963685755966,
+          "max_grad_std": 5.886430075190294,
+          "model": "pythia_410m",
+          "params": 405000000
+        },
+        {
+          "max_grad_mean": 15.294844940401338,
+          "max_grad_std": 0.058132923145183486,
+          "model": "pythia_1b",
+          "params": 1011000000
+        },
+        {
+          "max_grad_mean": 13.640153816863114,
+          "max_grad_std": 0.23818193755304554,
+          "model": "pythia_2_8b",
+          "params": 2775000000
+        },
+        {
+          "max_grad_mean": 29.527240191855814,
+          "max_grad_std": 0.5952296815235514,
+          "model": "pythia_6_9b",
+          "params": 6857000000
+        },
+        {
+          "max_grad_mean": 24.6183541593516,
+          "max_grad_std": 0.07734724484913795,
+          "model": "qwen3_5_9b",
+          "params": 8960000000
+        }
+      ],
+      "rank": 16
+    },
+    "r16_m040": {
+      "fit": {
+        "a": 71.81227553133867,
+        "k": -0.05532478993600109,
+        "r2": 0.030464014097983605
+      },
+      "mask_ratio": 0.4,
+      "n_points": 5,
+      "points": [
+        {
+          "max_grad_mean": 34.343465179318926,
+          "max_grad_std": 25.853385096350713,
+          "model": "pythia_410m",
+          "params": 405000000
+        },
+        {
+          "max_grad_mean": 16.780360262294963,
+          "max_grad_std": 0.5715810042278212,
+          "model": "pythia_1b",
+          "params": 1011000000
+        },
+        {
+          "max_grad_mean": 13.338066977414133,
+          "max_grad_std": 0.1138595269641334,
+          "model": "pythia_2_8b",
+          "params": 2775000000
+        },
+        {
+          "max_grad_mean": 32.260174635848585,
+          "max_grad_std": 0.3891057738452351,
+          "model": "pythia_6_9b",
+          "params": 6857000000
+        },
+        {
+          "max_grad_mean": 19.722360271533958,
+          "max_grad_std": 0.0731044891158489,
+          "model": "qwen3_5_9b",
+          "params": 8960000000
+        }
+      ],
+      "rank": 16
+    },
+    "r16_m080": {
+      "fit": {
+        "a": 248.08621003613993,
+        "k": -0.10963879070854972,
+        "r2": 0.07320145853356841
+      },
+      "mask_ratio": 0.8,
+      "n_points": 5,
+      "points": [
+        {
+          "max_grad_mean": 43.34854236795885,
+          "max_grad_std": 19.179433086357204,
+          "model": "pythia_410m",
+          "params": 405000000
+        },
+        {
+          "max_grad_mean": 16.785571000576354,
+          "max_grad_std": 0.45195710200278094,
+          "model": "pythia_1b",
+          "params": 1011000000
+        },
+        {
+          "max_grad_mean": 13.939178156818812,
+          "max_grad_std": 0.19756926199876712,
+          "model": "pythia_2_8b",
+          "params": 2775000000
+        },
+        {
+          "max_grad_mean": 39.07447911111193,
+          "max_grad_std": 0.8439835084262661,
+          "model": "pythia_6_9b",
+          "params": 6857000000
+        },
+        {
+          "max_grad_mean": 17.34052926393427,
+          "max_grad_std": 0.23448402925750222,
+          "model": "qwen3_5_9b",
+          "params": 8960000000
+        }
+      ],
+      "rank": 16
+    },
+    "r64_m010": {
+      "fit": {
+        "a": 0.4096250426621484,
+        "k": 0.1808929413229909,
+        "r2": 0.3509235609458462
+      },
+      "mask_ratio": 0.1,
+      "n_points": 5,
+      "points": [
+        {
+          "max_grad_mean": 14.981135949307012,
+          "max_grad_std": 2.6326685620526526,
+          "model": "pythia_410m",
+          "params": 405000000
+        },
+        {
+          "max_grad_mean": 22.50941454012748,
+          "max_grad_std": 12.548328784647229,
+          "model": "pythia_1b",
+          "params": 1011000000
+        },
+        {
+          "max_grad_mean": 12.060684650834679,
+          "max_grad_std": 0.23402355300279526,
+          "model": "pythia_2_8b",
+          "params": 2775000000
+        },
+        {
+          "max_grad_mean": 29.03673697679473,
+          "max_grad_std": 2.9135908526227863,
+          "model": "pythia_6_9b",
+          "params": 6857000000
+        },
+        {
+          "max_grad_mean": 29.06944120874062,
+          "max_grad_std": 0.4428220314469598,
+          "model": "qwen3_5_9b",
+          "params": 8960000000
+        }
+      ],
+      "rank": 64
+    },
+    "r64_m040": {
+      "fit": {
+        "a": 1.4731730139812274,
+        "k": 0.12181819358085463,
+        "r2": 0.1678434701628817
+      },
+      "mask_ratio": 0.4,
+      "n_points": 5,
+      "points": [
+        {
+          "max_grad_mean": 21.703437735422867,
+          "max_grad_std": 1.6199862207109792,
+          "model": "pythia_410m",
+          "params": 405000000
+        },
+        {
+          "max_grad_mean": 16.609598752008452,
+          "max_grad_std": 0.4408061460608901,
+          "model": "pythia_1b",
+          "params": 1011000000
+        },
+        {
+          "max_grad_mean": 11.745831591643455,
+          "max_grad_std": 0.024998284444203312,
+          "model": "pythia_2_8b",
+          "params": 2775000000
+        },
+        {
+          "max_grad_mean": 27.292238478004812,
+          "max_grad_std": 0.3763341022946112,
+          "model": "pythia_6_9b",
+          "params": 6857000000
+        },
+        {
+          "max_grad_mean": 30.542095689058602,
+          "max_grad_std": 0.34087212657294585,
+          "model": "qwen3_5_9b",
+          "params": 8960000000
+        }
+      ],
+      "rank": 64
+    },
+    "r64_m080": {
+      "fit": {
+        "a": 201.86204335927442,
+        "k": -0.09829174788963026,
+        "r2": 0.06861077963349616
+      },
+      "mask_ratio": 0.8,
+      "n_points": 5,
+      "points": [
+        {
+          "max_grad_mean": 44.28107874916241,
+          "max_grad_std": 19.81352737860811,
+          "model": "pythia_410m",
+          "params": 405000000
+        },
+        {
+          "max_grad_mean": 19.726314498126246,
+          "max_grad_std": 0.5545796413794137,
+          "model": "pythia_1b",
+          "params": 1011000000
+        },
+        {
+          "max_grad_mean": 12.05025898934903,
+          "max_grad_std": 0.4746098549321589,
+          "model": "pythia_2_8b",
+          "params": 2775000000
+        },
+        {
+          "max_grad_mean": 30.6462099400602,
+          "max_grad_std": 0.2691940212111266,
+          "model": "pythia_6_9b",
+          "params": 6857000000
+        },
+        {
+          "max_grad_mean": 25.838429008683338,
+          "max_grad_std": 0.2975972238424066,
+          "model": "qwen3_5_9b",
+          "params": 8960000000
+        }
+      ],
+      "rank": 64
+    }
+  },
+  "models": [
+    "pythia_410m",
+    "pythia_1b",
+    "pythia_2_8b",
+    "pythia_6_9b",
+    "qwen3_5_9b"
+  ],
+  "params": {
+    "pythia_1b": 1011000000,
+    "pythia_2_8b": 2775000000,
+    "pythia_410m": 405000000,
+    "pythia_6_9b": 6857000000,
+    "qwen3_5_9b": 8960000000
+  },
+  "scope": "appendix-only supplement; does NOT replace main 4-pt fit at eval/ar_scaling_law_fit.json",
+  "target_cells": [
+    {
+      "mask_ratio": 0.1,
+      "rank": 16
+    },
+    {
+      "mask_ratio": 0.4,
+      "rank": 16
+    },
+    {
+      "mask_ratio": 0.8,
+      "rank": 16
+    },
+    {
+      "mask_ratio": 0.1,
+      "rank": 64
+    },
+    {
+      "mask_ratio": 0.4,
+      "rank": 64
+    },
+    {
+      "mask_ratio": 0.8,
+      "rank": 64
+    }
+  ]
+}

@@ -1,0 +1,538 @@
+{
+  "benches": {
+    "gsm8k": 1319,
+    "humaneval": 164,
+    "mmlu": 250
+  },
+  "cell": "r=64, m=0.40, model=LLaDA2.0-mini",
+  "cells": {
+    "k52_dare_lora_gsm8k": {
+      "lr_protocol": "default_1e-4",
+      "mean": 8.442488458260824,
+      "n": 3,
+      "seeds_raw": [
+        6.535607937703628,
+        12.86228237593147,
+        5.9295750611473705
+      ],
+      "sources": [
+        "llada2_mini_dare_lora_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_dare_lora_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_dare_lora_r64_m0p40_s7_gsm8k.json"
+      ],
+      "std": 3.1350441430040075,
+      "value": "8.442\u00b13.135"
+    },
+    "k52_dare_lora_humaneval": {
+      "lr_protocol": "default_1e-4",
+      "mean": 6.953974038604798,
+      "n": 3,
+      "seeds_raw": [
+        6.099629646394311,
+        8.808858702822429,
+        5.953433766597655
+      ],
+      "sources": [
+        "llada2_mini_dare_lora_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_dare_lora_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_dare_lora_r64_m0p40_s7_humaneval.json"
+      ],
+      "std": 1.3129587825416031,
+      "value": "6.954\u00b11.313"
+    },
+    "k52_dare_lora_mmlu": {
+      "lr_protocol": "default_1e-4",
+      "mean": 7.769669487635294,
+      "n": 3,
+      "seeds_raw": [
+        6.234841585159302,
+        11.033592929840088,
+        6.040573947906494
+      ],
+      "sources": [
+        "llada2_mini_dare_lora_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_dare_lora_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_dare_lora_r64_m0p40_s7_mmlu.json"
+      ],
+      "std": 2.3093046797902086,
+      "value": "7.770\u00b12.309"
+    },
+    "k52_dora_gsm8k": {
+      "lr_protocol": "default_1e-4",
+      "mean": 5.507725935799321,
+      "n": 3,
+      "seeds_raw": [
+        5.456750521974368,
+        5.347991440493199,
+        5.718435844930399
+      ],
+      "sources": [
+        "llada2_mini_dora_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_dora_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_dora_r64_m0p40_s7_gsm8k.json"
+      ],
+      "std": 0.15546946925506402,
+      "value": "5.508\u00b10.155"
+    },
+    "k52_dora_humaneval": {
+      "lr_protocol": "default_1e-4",
+      "mean": 5.679184653894688,
+      "n": 3,
+      "seeds_raw": [
+        5.607103001780626,
+        5.660760504443471,
+        5.769690455459967
+      ],
+      "sources": [
+        "llada2_mini_dora_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_dora_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_dora_r64_m0p40_s7_humaneval.json"
+      ],
+      "std": 0.06764247672251311,
+      "value": "5.679\u00b10.068"
+    },
+    "k52_dora_mmlu": {
+      "lr_protocol": "default_1e-4",
+      "mean": 5.649976754188539,
+      "n": 3,
+      "seeds_raw": [
+        5.517875749588013,
+        5.546829268455506,
+        5.885225244522095
+      ],
+      "sources": [
+        "llada2_mini_dora_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_dora_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_dora_r64_m0p40_s7_mmlu.json"
+      ],
+      "std": 0.16676523561954967,
+      "value": "5.650\u00b10.167"
+    },
+    "k52_lora_gsm8k": {
+      "lr_protocol": "default_1e-4",
+      "mean": 5.609953095101335,
+      "n": 3,
+      "seeds_raw": [
+        5.644758874128224,
+        5.375253213907029,
+        5.809847197268748
+      ],
+      "sources": [
+        "llada2_mini_lora_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_lora_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_lora_r64_m0p40_s7_gsm8k.json"
+      ],
+      "std": 0.17912112156080906,
+      "value": "5.610\u00b10.179"
+    },
+    "k52_lora_humaneval": {
+      "lr_protocol": "default_1e-4",
+      "mean": 5.709471545568327,
+      "n": 3,
+      "seeds_raw": [
+        5.640888423454471,
+        5.6656272411346436,
+        5.821898972115865
+      ],
+      "sources": [
+        "llada2_mini_lora_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_lora_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_lora_r64_m0p40_s7_humaneval.json"
+      ],
+      "std": 0.08013716139690269,
+      "value": "5.709\u00b10.080"
+    },
+    "k52_lora_mmlu": {
+      "lr_protocol": "default_1e-4",
+      "mean": 5.748883422851563,
+      "n": 3,
+      "seeds_raw": [
+        5.688755855560303,
+        5.573648817062378,
+        5.9842455959320064
+      ],
+      "sources": [
+        "llada2_mini_lora_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_lora_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_lora_r64_m0p40_s7_mmlu.json"
+      ],
+      "std": 0.17293336282279814,
+      "value": "5.749\u00b10.173"
+    },
+    "k52_nara_gsm8k": {
+      "lr_protocol": "default_1e-4",
+      "mean": 5.544679811093011,
+      "n": 3,
+      "seeds_raw": [
+        5.808049739536867,
+        5.3887382768337435,
+        5.4372514169084205
+      ],
+      "sources": [
+        "llada2_mini_nara_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_nara_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_nara_r64_m0p40_s7_gsm8k.json"
+      ],
+      "std": 0.18728084186833405,
+      "value": "5.545\u00b10.187"
+    },
+    "k52_nara_humaneval": {
+      "lr_protocol": "default_1e-4",
+      "mean": 5.664291281525682,
+      "n": 3,
+      "seeds_raw": [
+        5.755672065223136,
+        5.648212805026915,
+        5.588988974326995
+      ],
+      "sources": [
+        "llada2_mini_nara_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_nara_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_nara_r64_m0p40_s7_humaneval.json"
+      ],
+      "std": 0.06899130985162243,
+      "value": "5.664\u00b10.069"
+    },
+    "k52_nara_mmlu": {
+      "lr_protocol": "default_1e-4",
+      "mean": 5.693741280237834,
+      "n": 3,
+      "seeds_raw": [
+        5.9609965763092045,
+        5.505732318878174,
+        5.614494945526123
+      ],
+      "sources": [
+        "llada2_mini_nara_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_nara_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_nara_r64_m0p40_s7_mmlu.json"
+      ],
+      "std": 0.1941243110268733,
+      "value": "5.694\u00b10.194"
+    },
+    "k52_rslora_gsm8k": {
+      "lr_protocol": "default_1e-4",
+      "mean": 7.523553572069794,
+      "n": 3,
+      "seeds_raw": [
+        7.363745827852008,
+        7.611703018061224,
+        7.5952118702961515
+      ],
+      "sources": [
+        "llada2_mini_rslora_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_rslora_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_rslora_r64_m0p40_s7_gsm8k.json"
+      ],
+      "std": 0.11320151890216391,
+      "value": "7.524\u00b10.113"
+    },
+    "k52_rslora_humaneval": {
+      "lr_protocol": "default_1e-4",
+      "mean": 8.381558992029206,
+      "n": 3,
+      "seeds_raw": [
+        7.910543014363545,
+        8.51248799010021,
+        8.721645971623863
+      ],
+      "sources": [
+        "llada2_mini_rslora_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_rslora_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_rslora_r64_m0p40_s7_humaneval.json"
+      ],
+      "std": 0.3438301942539041,
+      "value": "8.382\u00b10.344"
+    },
+    "k52_rslora_mmlu": {
+      "lr_protocol": "default_1e-4",
+      "mean": 7.617451733907064,
+      "n": 3,
+      "seeds_raw": [
+        7.3262515525817875,
+        7.597985466003418,
+        7.928118183135986
+      ],
+      "sources": [
+        "llada2_mini_rslora_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_rslora_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_rslora_r64_m0p40_s7_mmlu.json"
+      ],
+      "std": 0.2460962710448066,
+      "value": "7.617\u00b10.246"
+    },
+    "k53_dare_lora_gsm8k": {
+      "lr_protocol": "best",
+      "mean": 5.588984817334247,
+      "n": 3,
+      "seeds_raw": [
+        5.584176454695903,
+        5.5886151918956415,
+        5.594162805411199
+      ],
+      "sources": [
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s7_gsm8k.json"
+      ],
+      "std": 0.0040852798660450515,
+      "value": "5.589\u00b10.004"
+    },
+    "k53_dare_lora_humaneval": {
+      "lr_protocol": "best",
+      "mean": 5.779746668125555,
+      "n": 3,
+      "seeds_raw": [
+        5.79189179874048,
+        5.77134654580093,
+        5.7760016598352575
+      ],
+      "sources": [
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s7_humaneval.json"
+      ],
+      "std": 0.008795668248568705,
+      "value": "5.780\u00b10.009"
+    },
+    "k53_dare_lora_mmlu": {
+      "lr_protocol": "best",
+      "mean": 5.663321557680766,
+      "n": 3,
+      "seeds_raw": [
+        5.6465355548858644,
+        5.654513204574585,
+        5.688915913581848
+      ],
+      "sources": [
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s7_mmlu.json"
+      ],
+      "std": 0.018388656179511517,
+      "value": "5.663\u00b10.018"
+    },
+    "k53_dora_gsm8k": {
+      "lr_protocol": "best",
+      "mean": 5.6174824069719405,
+      "n": 3,
+      "seeds_raw": [
+        5.583175929230754,
+        5.66025781306107,
+        5.609013478623998
+      ],
+      "sources": [
+        "llada2_mini_dora_lr1en4_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s7_gsm8k.json"
+      ],
+      "std": 0.032033277116455997,
+      "value": "5.617\u00b10.032"
+    },
+    "k53_dora_humaneval": {
+      "lr_protocol": "best",
+      "mean": 5.772677693425155,
+      "n": 3,
+      "seeds_raw": [
+        5.745030080399862,
+        5.807282831610703,
+        5.765720168264901
+      ],
+      "sources": [
+        "llada2_mini_dora_lr1en4_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s7_humaneval.json"
+      ],
+      "std": 0.025886375124073775,
+      "value": "5.773\u00b10.026"
+    },
+    "k53_dora_mmlu": {
+      "lr_protocol": "best",
+      "mean": 5.702911563873291,
+      "n": 3,
+      "seeds_raw": [
+        5.721759647369384,
+        5.67813086605072,
+        5.708844178199768
+      ],
+      "sources": [
+        "llada2_mini_dora_lr1en4_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s7_mmlu.json"
+      ],
+      "std": 0.01829871715718511,
+      "value": "5.703\u00b10.018"
+    },
+    "k53_lora_gsm8k": {
+      "lr_protocol": "best",
+      "mean": 5.609953095101335,
+      "n": 3,
+      "seeds_raw": [
+        5.644758874128224,
+        5.375253213907029,
+        5.809847197268748
+      ],
+      "sources": [
+        "llada2_mini_lora_lrfixed_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s7_gsm8k.json"
+      ],
+      "std": 0.17912112156080906,
+      "value": "5.610\u00b10.179"
+    },
+    "k53_lora_humaneval": {
+      "lr_protocol": "best",
+      "mean": 5.709471545568327,
+      "n": 3,
+      "seeds_raw": [
+        5.640888423454471,
+        5.6656272411346436,
+        5.821898972115865
+      ],
+      "sources": [
+        "llada2_mini_lora_lrfixed_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s7_humaneval.json"
+      ],
+      "std": 0.08013716139690269,
+      "value": "5.709\u00b10.080"
+    },
+    "k53_lora_mmlu": {
+      "lr_protocol": "best",
+      "mean": 5.748883422851563,
+      "n": 3,
+      "seeds_raw": [
+        5.688755855560303,
+        5.573648817062378,
+        5.9842455959320064
+      ],
+      "sources": [
+        "llada2_mini_lora_lrfixed_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s7_mmlu.json"
+      ],
+      "std": 0.17293336282279814,
+      "value": "5.749\u00b10.173"
+    },
+    "k53_nara_gsm8k": {
+      "lr_protocol": "best",
+      "mean": 5.533617009289915,
+      "n": 3,
+      "seeds_raw": [
+        5.509959974643224,
+        5.5363510274995535,
+        5.554540025726967
+      ],
+      "sources": [
+        "llada2_mini_nara_lr3en5_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s7_gsm8k.json"
+      ],
+      "std": 0.018302119737619613,
+      "value": "5.534\u00b10.018"
+    },
+    "k53_nara_humaneval": {
+      "lr_protocol": "best",
+      "mean": 5.708932365343823,
+      "n": 3,
+      "seeds_raw": [
+        5.677829184183261,
+        5.731053611127342,
+        5.717914300720866
+      ],
+      "sources": [
+        "llada2_mini_nara_lr3en5_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s7_humaneval.json"
+      ],
+      "std": 0.02263796631354056,
+      "value": "5.709\u00b10.023"
+    },
+    "k53_nara_mmlu": {
+      "lr_protocol": "best",
+      "mean": 5.649141912460327,
+      "n": 3,
+      "seeds_raw": [
+        5.6446180973052975,
+        5.611726657867432,
+        5.691080982208252
+      ],
+      "sources": [
+        "llada2_mini_nara_lr3en5_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s7_mmlu.json"
+      ],
+      "std": 0.03255381058662395,
+      "value": "5.649\u00b10.033"
+    },
+    "k53_rslora_gsm8k": {
+      "lr_protocol": "best",
+      "mean": 5.690002724351321,
+      "n": 3,
+      "seeds_raw": [
+        5.72668213912987,
+        5.718195984994398,
+        5.625130048929696
+      ],
+      "sources": [
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s7_gsm8k.json"
+      ],
+      "std": 0.04600254859079277,
+      "value": "5.690\u00b10.046"
+    },
+    "k53_rslora_humaneval": {
+      "lr_protocol": "best",
+      "mean": 5.780709161506436,
+      "n": 3,
+      "seeds_raw": [
+        5.805463340224289,
+        5.794824748504452,
+        5.741839395790565
+      ],
+      "sources": [
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s7_humaneval.json"
+      ],
+      "std": 0.02782611391661114,
+      "value": "5.781\u00b10.028"
+    },
+    "k53_rslora_mmlu": {
+      "lr_protocol": "best",
+      "mean": 5.772371998469034,
+      "n": 3,
+      "seeds_raw": [
+        5.807708501815796,
+        5.788471716880799,
+        5.72093577671051
+      ],
+      "sources": [
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s7_mmlu.json"
+      ],
+      "std": 0.03720911317811756,
+      "value": "5.772\u00b10.037"
+    }
+  },
+  "metric": "mean_masked_ce",
+  "paper_slug": "top1-fails-dlm-lora-monitors",
+  "protocol": "K52-mini (default LR 10^-4) + K53-h (per-method best LR from Phase C)",
+  "schema_version": "1.0",
+  "seeds": [
+    1337,
+    42,
+    7
+  ],
+  "summary": {
+    "best_method_under_k53": "nara",
+    "gsm8k_full_aborted": true,
+    "gsm8k_smoke_path": "data/method_comparison_gsm8k_accuracy/smoke/llada2_mini_lora_r64_m0p40_s1337_gsm8k_n20.json",
+    "gsm8k_smoke_score": "0/20",
+    "k52_max_underperform_pct": -50.5,
+    "k53_max_collapse_pct": 1.74,
+    "k53_max_underperform_pct": -1.43
+  }
+}

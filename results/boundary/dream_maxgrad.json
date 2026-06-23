@@ -1,0 +1,254 @@
+{
+  "rows": [
+    {
+      "collapsed": true,
+      "file": "peft_dream_r16_m01.json",
+      "final_loss": 0.710449,
+      "mask_ratio": 0.1,
+      "max_grad_norm": 9.698675712734993,
+      "n_steps_logged": 12,
+      "rank": 16,
+      "wall_time_s": 2.43
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r16_m03.json",
+      "final_loss": 0.992676,
+      "mask_ratio": 0.3,
+      "max_grad_norm": 3.6606437451139167,
+      "n_steps_logged": 12,
+      "rank": 16,
+      "wall_time_s": 2.44
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r16_m05.json",
+      "final_loss": 1.84375,
+      "mask_ratio": 0.5,
+      "max_grad_norm": 3.0247757466097234,
+      "n_steps_logged": 12,
+      "rank": 16,
+      "wall_time_s": 2.45
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r16_m07.json",
+      "final_loss": 1.661133,
+      "mask_ratio": 0.7,
+      "max_grad_norm": 2.306704772427518,
+      "n_steps_logged": 12,
+      "rank": 16,
+      "wall_time_s": 2.41
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r16_m09.json",
+      "final_loss": 1.985352,
+      "mask_ratio": 0.9,
+      "max_grad_norm": 3.513602843940564,
+      "n_steps_logged": 12,
+      "rank": 16,
+      "wall_time_s": 2.43
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r32_m01.json",
+      "final_loss": 0.66748,
+      "mask_ratio": 0.1,
+      "max_grad_norm": 10.693366210494172,
+      "n_steps_logged": 12,
+      "rank": 32,
+      "wall_time_s": 2.55
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r32_m03.json",
+      "final_loss": 0.870605,
+      "mask_ratio": 0.3,
+      "max_grad_norm": 6.240371633097033,
+      "n_steps_logged": 12,
+      "rank": 32,
+      "wall_time_s": 2.43
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r32_m05.json",
+      "final_loss": 1.753906,
+      "mask_ratio": 0.5,
+      "max_grad_norm": 14.12813434002467,
+      "n_steps_logged": 12,
+      "rank": 32,
+      "wall_time_s": 2.42
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r32_m07.json",
+      "final_loss": 1.630859,
+      "mask_ratio": 0.7,
+      "max_grad_norm": 3.332331447735344,
+      "n_steps_logged": 12,
+      "rank": 32,
+      "wall_time_s": 2.4
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r32_m09.json",
+      "final_loss": 1.953125,
+      "mask_ratio": 0.9,
+      "max_grad_norm": 5.195667519054149,
+      "n_steps_logged": 12,
+      "rank": 32,
+      "wall_time_s": 2.4
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r4_m01.json",
+      "final_loss": 0.761719,
+      "mask_ratio": 0.1,
+      "max_grad_norm": 5.5504403417033865,
+      "n_steps_logged": 12,
+      "rank": 4,
+      "wall_time_s": 2.85
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r4_m03.json",
+      "final_loss": 1.12793,
+      "mask_ratio": 0.3,
+      "max_grad_norm": 1.6955537075039486,
+      "n_steps_logged": 12,
+      "rank": 4,
+      "wall_time_s": 2.43
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r4_m05.json",
+      "final_loss": 1.910156,
+      "mask_ratio": 0.5,
+      "max_grad_norm": 1.407199852129299,
+      "n_steps_logged": 12,
+      "rank": 4,
+      "wall_time_s": 2.41
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r4_m07.json",
+      "final_loss": 1.686523,
+      "mask_ratio": 0.7,
+      "max_grad_norm": 0.985732265352661,
+      "n_steps_logged": 12,
+      "rank": 4,
+      "wall_time_s": 2.42
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r4_m09.json",
+      "final_loss": 2.015625,
+      "mask_ratio": 0.9,
+      "max_grad_norm": 2.037449007298569,
+      "n_steps_logged": 12,
+      "rank": 4,
+      "wall_time_s": 2.43
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r64_m01.json",
+      "final_loss": 0.589355,
+      "mask_ratio": 0.1,
+      "max_grad_norm": 15.405493154558807,
+      "n_steps_logged": 12,
+      "rank": 64,
+      "wall_time_s": 2.5
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r64_m03.json",
+      "final_loss": 0.726074,
+      "mask_ratio": 0.3,
+      "max_grad_norm": 5.411327450272414,
+      "n_steps_logged": 12,
+      "rank": 64,
+      "wall_time_s": 2.53
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r64_m05.json",
+      "final_loss": 1.635742,
+      "mask_ratio": 0.5,
+      "max_grad_norm": 8.519917408369432,
+      "n_steps_logged": 12,
+      "rank": 64,
+      "wall_time_s": 2.56
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r64_m07.json",
+      "final_loss": 1.586914,
+      "mask_ratio": 0.7,
+      "max_grad_norm": 3.752264373855178,
+      "n_steps_logged": 12,
+      "rank": 64,
+      "wall_time_s": 2.57
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r64_m09.json",
+      "final_loss": 1.892578,
+      "mask_ratio": 0.9,
+      "max_grad_norm": 7.064100024212624,
+      "n_steps_logged": 12,
+      "rank": 64,
+      "wall_time_s": 2.57
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r8_m01.json",
+      "final_loss": 0.74707,
+      "mask_ratio": 0.1,
+      "max_grad_norm": 8.139292398879425,
+      "n_steps_logged": 12,
+      "rank": 8,
+      "wall_time_s": 2.41
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r8_m03.json",
+      "final_loss": 1.080078,
+      "mask_ratio": 0.3,
+      "max_grad_norm": 2.3232963628249523,
+      "n_steps_logged": 12,
+      "rank": 8,
+      "wall_time_s": 4.13
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r8_m05.json",
+      "final_loss": 1.886719,
+      "mask_ratio": 0.5,
+      "max_grad_norm": 1.9798097390366347,
+      "n_steps_logged": 12,
+      "rank": 8,
+      "wall_time_s": 4.12
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r8_m07.json",
+      "final_loss": 1.679688,
+      "mask_ratio": 0.7,
+      "max_grad_norm": 1.5808084944885623,
+      "n_steps_logged": 12,
+      "rank": 8,
+      "wall_time_s": 4.13
+    },
+    {
+      "collapsed": true,
+      "file": "peft_dream_r8_m09.json",
+      "final_loss": 2.003906,
+      "mask_ratio": 0.9,
+      "max_grad_norm": 2.81901667533674,
+      "n_steps_logged": 12,
+      "rank": 8,
+      "wall_time_s": 4.2
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the paper."
+title: "When Top-1 Fails: Calibrating LoRA Monitors for Masked Diffusion LMs"
+authors:
+  - family-names: Verma
+    given-names: Lucky
+  - family-names: Yadav
+    given-names: Pratik
+year: 2026
+repository-code: "https://github.com/lucky-verma/top1-fails-dlm-lora-monitors"
+url: "https://github.com/lucky-verma/top1-fails-dlm-lora-monitors"
+keywords:
+  - LoRA
+  - masked diffusion language models
+  - DLM
+  - PEFT
+  - training monitor
+  - top-1 collapse
+  - gradient norm
+license: Apache-2.0

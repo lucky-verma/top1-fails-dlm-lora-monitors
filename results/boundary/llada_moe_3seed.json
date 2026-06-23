@@ -1,0 +1,435 @@
+{
+  "all_expected_present": true,
+  "cells": {
+    "r4_m0p4": {
+      "collapsed_count": 0,
+      "eval_holdout_loss": {
+        "max": 5.209375,
+        "mean": 5.049219,
+        "min": 4.876563,
+        "n": 3,
+        "std": 0.16675774145748062
+      },
+      "final_loss": {
+        "max": 2.359375,
+        "mean": 2.1197916666666665,
+        "min": 1.9375,
+        "n": 3,
+        "std": 0.21669420898661168
+      },
+      "mask": 0.4,
+      "max_grad_norm": {
+        "max": 116.42145684935969,
+        "mean": 89.40862727478175,
+        "min": 65.59324414618736,
+        "n": 3,
+        "std": 25.564517391903404
+      },
+      "n": 3,
+      "paths": [
+        "results/peft_results/peft_results_w7_k11b_llada_moe_a1b_3seed/r4_m0p40_s1337.json",
+        "results/peft_results/peft_results_w7_k11b_llada_moe_a1b_3seed/r4_m0p40_s42.json",
+        "results/peft_results/peft_results_w7_k11b_llada_moe_a1b_3seed/r4_m0p40_s7.json"
+      ],
+      "rank": 4,
+      "seeds": [
+        7,
+        42,
+        1337
+      ],
+      "top1_warning_count": 3,
+      "wall_time_s": {
+        "max": 120.55,
+        "mean": 120.17666666666666,
+        "min": 119.56,
+        "n": 3,
+        "std": 0.5379900866496811
+      }
+    },
+    "r4_m0p9": {
+      "collapsed_count": 0,
+      "eval_holdout_loss": {
+        "max": 5.326562,
+        "mean": 5.269791666666666,
+        "min": 5.189063,
+        "n": 3,
+        "std": 0.07181222077288336
+      },
+      "final_loss": {
+        "max": 2.1875,
+        "mean": 2.0677083333333335,
+        "min": 2.0,
+        "n": 3,
+        "std": 0.10403637685124051
+      },
+      "mask": 0.9,
+      "max_grad_norm": {
+        "max": 354.0675598303118,
+        "mean": 238.37209089117513,
+        "min": 171.95666698690542,
+        "n": 3,
+        "std": 100.56085944359538
+      },
+      "n": 3,
+      "paths": [
+        "results/peft_results/peft_results_w7_k11b_llada_moe_a1b_3seed/r4_m0p90_s1337.json",
+        "results/peft_results/peft_results_w7_k11b_llada_moe_a1b_3seed/r4_m0p90_s42.json",
+        "results/peft_results/peft_results_w7_k11b_llada_moe_a1b_3seed/r4_m0p90_s7.json"
+      ],
+      "rank": 4,
+      "seeds": [
+        7,
+        42,
+        1337
+      ],
+      "top1_warning_count": 3,
+      "wall_time_s": {
+        "max": 109.63,
+        "mean": 108.33333333333333,
+        "min": 106.99,
+        "n": 3,
+        "std": 1.3206185419466645
+      }
+    },
+    "r64_m0p4": {
+      "collapsed_count": 0,
+      "eval_holdout_loss": {
+        "max": 5.2375,
+        "mean": 5.011718666666667,
+        "min": 4.710156,
+        "n": 3,
+        "std": 0.27171682216111215
+      },
+      "final_loss": {
+        "max": 2.234375,
+        "mean": 2.2083333333333335,
+        "min": 2.1875,
+        "n": 3,
+        "std": 0.023867581744561668
+      },
+      "mask": 0.4,
+      "max_grad_norm": {
+        "max": 212.9689412398929,
+        "mean": 168.7618094367425,
+        "min": 123.43223627936175,
+        "n": 3,
+        "std": 44.77890451699959
+      },
+      "n": 3,
+      "paths": [
+        "results/peft_results/peft_results_w7_k11b_llada_moe_a1b_3seed/r64_m0p40_s1337.json",
+        "results/peft_results/peft_results_w7_k11b_llada_moe_a1b_3seed/r64_m0p40_s42.json",
+        "results/peft_results/peft_results_w7_k11b_llada_moe_a1b_3seed/r64_m0p40_s7.json"
+      ],
+      "rank": 64,
+      "seeds": [
+        7,
+        42,
+        1337
+      ],
+      "top1_warning_count": 3,
+      "wall_time_s": {
+        "max": 117.91,
+        "mean": 117.42666666666666,
+        "min": 116.52,
+        "n": 3,
+        "std": 0.7857692621459132
+      }
+    },
+    "r64_m0p9": {
+      "collapsed_count": 0,
+      "eval_holdout_loss": {
+        "max": 5.765625,
+        "mean": 5.345833,
+        "min": 5.039062,
+        "n": 3,
+        "std": 0.3762363061601045
+      },
+      "final_loss": {
+        "max": 2.140625,
+        "mean": 2.0520833333333335,
+        "min": 2.0,
+        "n": 3,
+        "std": 0.07707629472369136
+      },
+      "mask": 0.9,
+      "max_grad_norm": {
+        "max": 759.0103504949011,
+        "mean": 587.8905010092867,
+        "min": 492.11803572869644,
+        "n": 3,
+        "std": 148.5456096632289
+      },
+      "n": 3,
+      "paths": [
+        "results/peft_results/peft_results_w7_k11b_llada_moe_a1b_3seed/r64_m0p90_s1337.json",
+        "results/peft_results/peft_results_w7_k11b_llada_moe_a1b_3seed/r64_m0p90_s42.json",
+        "results/peft_results/peft_results_w7_k11b_llada_moe_a1b_3seed/r64_m0p90_s7.json"
+      ],
+      "rank": 64,
+      "seeds": [
+        7,
+        42,
+        1337
+      ],
+      "top1_warning_count": 3,
+      "wall_time_s": {
+        "max": 104.46,
+        "mean": 103.13,
+        "min": 102.11,
+        "n": 3,
+        "std": 1.2052800504447065
+      }
+    }
+  },
+  "contrasts": {
+    "max_grad_rank_amp_high_mask_r64_over_r4": 2.4662723677566705,
+    "max_grad_rank_amp_low_mask_r64_over_r4": 1.8875338385196616,
+    "r4_high_minus_low_final_loss": -0.05208333333333304,
+    "r4_high_minus_low_holdout_loss": 0.22057266666666653,
+    "r64_high_minus_low_final_loss": -0.15625,
+    "r64_high_minus_low_holdout_loss": 0.33411433333333296,
+    "rank_amp_high_over_low_ratio": 1.3066109425041603
+  },
+  "description": "K11b 12-cell LLaDA-MoE-A1B small-MoE proxy: ranks {4,64} x masks {0.40,0.90} x seeds {1337,42,7}, 200 steps.",
+  "expected_json": 12,
+  "generated_at": "2026-05-08T07:12:09+00:00",
+  "input_dir": "results/peft_results/peft_results_w7_k11b_llada_moe_a1b_3seed",
+  "model": "inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+  "n_json": 12,
+  "quality_flags": {
+    "collapsed_cells": 0,
+    "note": "top1_warning_detected is a soft diagnostic emitted by dlm_train.py and is not treated as collapse.",
+    "top1_warning_cells": 12
+  },
+  "rows": [
+    {
+      "collapsed": false,
+      "eval_holdout_loss": 4.876563,
+      "eval_holdout_n": 20,
+      "eval_holdout_std": 0.588254,
+      "final_loss": 1.9375,
+      "gpu_memory_peak_gb": 15.32,
+      "lr": 0.0001,
+      "mask": 0.4,
+      "max_grad_norm": 86.21118082879823,
+      "model_id": "inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+      "model_name": "llada_moe_a1b",
+      "n_params_B": 7.356880896,
+      "n_steps": 200,
+      "rank": 4,
+      "seed": 1337,
+      "top1_warning_detected": true,
+      "wall_time_s": 119.56
+    },
+    {
+      "collapsed": false,
+      "eval_holdout_loss": 5.061719,
+      "eval_holdout_n": 20,
+      "eval_holdout_std": 0.578177,
+      "final_loss": 2.0625,
+      "gpu_memory_peak_gb": 15.32,
+      "lr": 0.0001,
+      "mask": 0.4,
+      "max_grad_norm": 65.59324414618736,
+      "model_id": "inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+      "model_name": "llada_moe_a1b",
+      "n_params_B": 7.356880896,
+      "n_steps": 200,
+      "rank": 4,
+      "seed": 42,
+      "top1_warning_detected": true,
+      "wall_time_s": 120.42
+    },
+    {
+      "collapsed": false,
+      "eval_holdout_loss": 5.209375,
+      "eval_holdout_n": 20,
+      "eval_holdout_std": 0.539558,
+      "final_loss": 2.359375,
+      "gpu_memory_peak_gb": 15.32,
+      "lr": 0.0001,
+      "mask": 0.4,
+      "max_grad_norm": 116.42145684935969,
+      "model_id": "inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+      "model_name": "llada_moe_a1b",
+      "n_params_B": 7.356880896,
+      "n_steps": 200,
+      "rank": 4,
+      "seed": 7,
+      "top1_warning_detected": true,
+      "wall_time_s": 120.55
+    },
+    {
+      "collapsed": false,
+      "eval_holdout_loss": 5.29375,
+      "eval_holdout_n": 20,
+      "eval_holdout_std": 0.48376,
+      "final_loss": 2.1875,
+      "gpu_memory_peak_gb": 15.36,
+      "lr": 0.0001,
+      "mask": 0.9,
+      "max_grad_norm": 189.09204585630815,
+      "model_id": "inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+      "model_name": "llada_moe_a1b",
+      "n_params_B": 7.356880896,
+      "n_steps": 200,
+      "rank": 4,
+      "seed": 1337,
+      "top1_warning_detected": true,
+      "wall_time_s": 109.63
+    },
+    {
+      "collapsed": false,
+      "eval_holdout_loss": 5.326562,
+      "eval_holdout_n": 20,
+      "eval_holdout_std": 0.466188,
+      "final_loss": 2.015625,
+      "gpu_memory_peak_gb": 15.36,
+      "lr": 0.0001,
+      "mask": 0.9,
+      "max_grad_norm": 171.95666698690542,
+      "model_id": "inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+      "model_name": "llada_moe_a1b",
+      "n_params_B": 7.356880896,
+      "n_steps": 200,
+      "rank": 4,
+      "seed": 42,
+      "top1_warning_detected": true,
+      "wall_time_s": 106.99
+    },
+    {
+      "collapsed": false,
+      "eval_holdout_loss": 5.189063,
+      "eval_holdout_n": 20,
+      "eval_holdout_std": 0.682401,
+      "final_loss": 2.0,
+      "gpu_memory_peak_gb": 15.36,
+      "lr": 0.0001,
+      "mask": 0.9,
+      "max_grad_norm": 354.0675598303118,
+      "model_id": "inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+      "model_name": "llada_moe_a1b",
+      "n_params_B": 7.356880896,
+      "n_steps": 200,
+      "rank": 4,
+      "seed": 7,
+      "top1_warning_detected": true,
+      "wall_time_s": 108.38
+    },
+    {
+      "collapsed": false,
+      "eval_holdout_loss": 5.0875,
+      "eval_holdout_n": 20,
+      "eval_holdout_std": 0.588845,
+      "final_loss": 2.234375,
+      "gpu_memory_peak_gb": 15.52,
+      "lr": 0.0001,
+      "mask": 0.4,
+      "max_grad_norm": 212.9689412398929,
+      "model_id": "inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+      "model_name": "llada_moe_a1b",
+      "n_params_B": 7.356880896,
+      "n_steps": 200,
+      "rank": 64,
+      "seed": 1337,
+      "top1_warning_detected": true,
+      "wall_time_s": 117.91
+    },
+    {
+      "collapsed": false,
+      "eval_holdout_loss": 4.710156,
+      "eval_holdout_n": 20,
+      "eval_holdout_std": 0.489276,
+      "final_loss": 2.1875,
+      "gpu_memory_peak_gb": 15.51,
+      "lr": 0.0001,
+      "mask": 0.4,
+      "max_grad_norm": 169.8842507909729,
+      "model_id": "inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+      "model_name": "llada_moe_a1b",
+      "n_params_B": 7.356880896,
+      "n_steps": 200,
+      "rank": 64,
+      "seed": 42,
+      "top1_warning_detected": true,
+      "wall_time_s": 117.85
+    },
+    {
+      "collapsed": false,
+      "eval_holdout_loss": 5.2375,
+      "eval_holdout_n": 20,
+      "eval_holdout_std": 0.652774,
+      "final_loss": 2.203125,
+      "gpu_memory_peak_gb": 15.51,
+      "lr": 0.0001,
+      "mask": 0.4,
+      "max_grad_norm": 123.43223627936175,
+      "model_id": "inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+      "model_name": "llada_moe_a1b",
+      "n_params_B": 7.356880896,
+      "n_steps": 200,
+      "rank": 64,
+      "seed": 7,
+      "top1_warning_detected": true,
+      "wall_time_s": 116.52
+    },
+    {
+      "collapsed": false,
+      "eval_holdout_loss": 5.039062,
+      "eval_holdout_n": 20,
+      "eval_holdout_std": 0.495574,
+      "final_loss": 2.140625,
+      "gpu_memory_peak_gb": 15.55,
+      "lr": 0.0001,
+      "mask": 0.9,
+      "max_grad_norm": 492.11803572869644,
+      "model_id": "inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+      "model_name": "llada_moe_a1b",
+      "n_params_B": 7.356880896,
+      "n_steps": 200,
+      "rank": 64,
+      "seed": 1337,
+      "top1_warning_detected": true,
+      "wall_time_s": 102.11
+    },
+    {
+      "collapsed": false,
+      "eval_holdout_loss": 5.765625,
+      "eval_holdout_n": 20,
+      "eval_holdout_std": 0.430808,
+      "final_loss": 2.015625,
+      "gpu_memory_peak_gb": 15.55,
+      "lr": 0.0001,
+      "mask": 0.9,
+      "max_grad_norm": 512.5431168042625,
+      "model_id": "inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+      "model_name": "llada_moe_a1b",
+      "n_params_B": 7.356880896,
+      "n_steps": 200,
+      "rank": 64,
+      "seed": 42,
+      "top1_warning_detected": true,
+      "wall_time_s": 102.82
+    },
+    {
+      "collapsed": false,
+      "eval_holdout_loss": 5.232812,
+      "eval_holdout_n": 20,
+      "eval_holdout_std": 0.682473,
+      "final_loss": 2.0,
+      "gpu_memory_peak_gb": 15.55,
+      "lr": 0.0001,
+      "mask": 0.9,
+      "max_grad_norm": 759.0103504949011,
+      "model_id": "inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+      "model_name": "llada_moe_a1b",
+      "n_params_B": 7.356880896,
+      "n_steps": 200,
+      "rank": 64,
+      "seed": 7,
+      "top1_warning_detected": true,
+      "wall_time_s": 104.46
+    }
+  ]
+}

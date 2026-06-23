@@ -1,0 +1,1608 @@
+{
+  "all_seeds": [
+    1337,
+    42,
+    7,
+    11,
+    31,
+    73,
+    97,
+    199,
+    401,
+    977
+  ],
+  "benches": {
+    "gsm8k": 1319,
+    "humaneval": 164,
+    "mmlu": 250
+  },
+  "cell_setting": "r=64, m=0.40, model=LLaDA2.0-mini",
+  "cells": {
+    "k52_dare_lora_gsm8k": {
+      "bench": "gsm8k",
+      "mean": 7.623801565495651,
+      "method": "dare_lora",
+      "n": 10,
+      "phase": "k52",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_dare_lora_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_dare_lora_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_dare_lora_r64_m0p40_s7_gsm8k.json",
+        "llada2_mini_dare_lora_r64_m0p40_s11_gsm8k.json",
+        "llada2_mini_dare_lora_r64_m0p40_s31_gsm8k.json",
+        "llada2_mini_dare_lora_r64_m0p40_s73_gsm8k.json",
+        "llada2_mini_dare_lora_r64_m0p40_s97_gsm8k.json",
+        "llada2_mini_dare_lora_r64_m0p40_s199_gsm8k.json",
+        "llada2_mini_dare_lora_r64_m0p40_s401_gsm8k.json",
+        "llada2_mini_dare_lora_r64_m0p40_s977_gsm8k.json"
+      ],
+      "std": 2.963840295256381,
+      "values": [
+        6.535607937703628,
+        12.86228237593147,
+        5.9295750611473705,
+        6.7755964718776,
+        5.6761990056243965,
+        6.157156846666083,
+        5.720410912031473,
+        6.234403500690706,
+        13.51592792680175,
+        6.830855616482032
+      ]
+    },
+    "k52_dare_lora_humaneval": {
+      "bench": "humaneval",
+      "mean": 7.27350968035256,
+      "method": "dare_lora",
+      "n": 10,
+      "phase": "k52",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_dare_lora_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_dare_lora_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_dare_lora_r64_m0p40_s7_humaneval.json",
+        "llada2_mini_dare_lora_r64_m0p40_s11_humaneval.json",
+        "llada2_mini_dare_lora_r64_m0p40_s31_humaneval.json",
+        "llada2_mini_dare_lora_r64_m0p40_s73_humaneval.json",
+        "llada2_mini_dare_lora_r64_m0p40_s97_humaneval.json",
+        "llada2_mini_dare_lora_r64_m0p40_s199_humaneval.json",
+        "llada2_mini_dare_lora_r64_m0p40_s401_humaneval.json",
+        "llada2_mini_dare_lora_r64_m0p40_s977_humaneval.json"
+      ],
+      "std": 2.170163683511533,
+      "values": [
+        6.099629646394311,
+        8.808858702822429,
+        5.953433766597655,
+        6.358081869962739,
+        5.789276753983846,
+        5.878170804279606,
+        5.8281470188280435,
+        7.115526580229038,
+        12.643015628907738,
+        8.260956031520193
+      ]
+    },
+    "k52_dare_lora_mmlu": {
+      "bench": "mmlu",
+      "mean": 7.302979210281372,
+      "method": "dare_lora",
+      "n": 10,
+      "phase": "k52",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_dare_lora_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_dare_lora_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_dare_lora_r64_m0p40_s7_mmlu.json",
+        "llada2_mini_dare_lora_r64_m0p40_s11_mmlu.json",
+        "llada2_mini_dare_lora_r64_m0p40_s31_mmlu.json",
+        "llada2_mini_dare_lora_r64_m0p40_s73_mmlu.json",
+        "llada2_mini_dare_lora_r64_m0p40_s97_mmlu.json",
+        "llada2_mini_dare_lora_r64_m0p40_s199_mmlu.json",
+        "llada2_mini_dare_lora_r64_m0p40_s401_mmlu.json",
+        "llada2_mini_dare_lora_r64_m0p40_s977_mmlu.json"
+      ],
+      "std": 2.3678104013386254,
+      "values": [
+        6.234841585159302,
+        11.033592929840088,
+        6.040573947906494,
+        6.57119674873352,
+        5.7297440586090085,
+        6.01480549621582,
+        5.622288763999939,
+        6.413399540901184,
+        12.346975002288819,
+        7.022374029159546
+      ]
+    },
+    "k52_dora_gsm8k": {
+      "bench": "gsm8k",
+      "mean": 5.575155123641221,
+      "method": "dora",
+      "n": 10,
+      "phase": "k52",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_dora_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_dora_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_dora_r64_m0p40_s7_gsm8k.json",
+        "llada2_mini_dora_r64_m0p40_s11_gsm8k.json",
+        "llada2_mini_dora_r64_m0p40_s31_gsm8k.json",
+        "llada2_mini_dora_r64_m0p40_s73_gsm8k.json",
+        "llada2_mini_dora_r64_m0p40_s97_gsm8k.json",
+        "llada2_mini_dora_r64_m0p40_s199_gsm8k.json",
+        "llada2_mini_dora_r64_m0p40_s401_gsm8k.json",
+        "llada2_mini_dora_r64_m0p40_s977_gsm8k.json"
+      ],
+      "std": 0.14631296423588586,
+      "values": [
+        5.456750521974368,
+        5.347991440493199,
+        5.718435844930399,
+        5.552090138355108,
+        5.485655110744566,
+        5.604933791489561,
+        5.802978821465968,
+        5.733111791849317,
+        5.61186835583274,
+        5.437735419276992
+      ]
+    },
+    "k52_dora_humaneval": {
+      "bench": "humaneval",
+      "mean": 5.65009269379988,
+      "method": "dora",
+      "n": 10,
+      "phase": "k52",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_dora_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_dora_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_dora_r64_m0p40_s7_humaneval.json",
+        "llada2_mini_dora_r64_m0p40_s11_humaneval.json",
+        "llada2_mini_dora_r64_m0p40_s31_humaneval.json",
+        "llada2_mini_dora_r64_m0p40_s73_humaneval.json",
+        "llada2_mini_dora_r64_m0p40_s97_humaneval.json",
+        "llada2_mini_dora_r64_m0p40_s199_humaneval.json",
+        "llada2_mini_dora_r64_m0p40_s401_humaneval.json",
+        "llada2_mini_dora_r64_m0p40_s977_humaneval.json"
+      ],
+      "std": 0.07798054404414753,
+      "values": [
+        5.607103001780626,
+        5.660760504443471,
+        5.769690455459967,
+        5.610023848894166,
+        5.556999055350699,
+        5.692593298307279,
+        5.781971120252842,
+        5.655477552879147,
+        5.582052334052761,
+        5.5842557665778365
+      ]
+    },
+    "k52_dora_mmlu": {
+      "bench": "mmlu",
+      "mean": 5.672586929321289,
+      "method": "dora",
+      "n": 10,
+      "phase": "k52",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_dora_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_dora_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_dora_r64_m0p40_s7_mmlu.json",
+        "llada2_mini_dora_r64_m0p40_s11_mmlu.json",
+        "llada2_mini_dora_r64_m0p40_s31_mmlu.json",
+        "llada2_mini_dora_r64_m0p40_s73_mmlu.json",
+        "llada2_mini_dora_r64_m0p40_s97_mmlu.json",
+        "llada2_mini_dora_r64_m0p40_s199_mmlu.json",
+        "llada2_mini_dora_r64_m0p40_s401_mmlu.json",
+        "llada2_mini_dora_r64_m0p40_s977_mmlu.json"
+      ],
+      "std": 0.14143325583118033,
+      "values": [
+        5.517875749588013,
+        5.546829268455506,
+        5.885225244522095,
+        5.591345872879028,
+        5.552029747962951,
+        5.889661263465881,
+        5.6839325180053715,
+        5.818268923759461,
+        5.620297517776489,
+        5.620403186798096
+      ]
+    },
+    "k52_lora_gsm8k": {
+      "bench": "gsm8k",
+      "mean": 5.620933085991814,
+      "method": "lora",
+      "n": 10,
+      "phase": "k52",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_lora_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_lora_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_lora_r64_m0p40_s7_gsm8k.json",
+        "llada2_mini_lora_r64_m0p40_s11_gsm8k.json",
+        "llada2_mini_lora_r64_m0p40_s31_gsm8k.json",
+        "llada2_mini_lora_r64_m0p40_s73_gsm8k.json",
+        "llada2_mini_lora_r64_m0p40_s97_gsm8k.json",
+        "llada2_mini_lora_r64_m0p40_s199_gsm8k.json",
+        "llada2_mini_lora_r64_m0p40_s401_gsm8k.json",
+        "llada2_mini_lora_r64_m0p40_s977_gsm8k.json"
+      ],
+      "std": 0.18318821462190762,
+      "values": [
+        5.644758874128224,
+        5.375253213907029,
+        5.809847197268748,
+        5.911727100181435,
+        5.5817962820734195,
+        5.563366917790202,
+        5.761942579314237,
+        5.494741866767542,
+        5.712822357391751,
+        5.3530744710955505
+      ]
+    },
+    "k52_lora_humaneval": {
+      "bench": "humaneval",
+      "mean": 5.676318154683927,
+      "method": "lora",
+      "n": 10,
+      "phase": "k52",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_lora_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_lora_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_lora_r64_m0p40_s7_humaneval.json",
+        "llada2_mini_lora_r64_m0p40_s11_humaneval.json",
+        "llada2_mini_lora_r64_m0p40_s31_humaneval.json",
+        "llada2_mini_lora_r64_m0p40_s73_humaneval.json",
+        "llada2_mini_lora_r64_m0p40_s97_humaneval.json",
+        "llada2_mini_lora_r64_m0p40_s199_humaneval.json",
+        "llada2_mini_lora_r64_m0p40_s401_humaneval.json",
+        "llada2_mini_lora_r64_m0p40_s977_humaneval.json"
+      ],
+      "std": 0.09273070096474542,
+      "values": [
+        5.640888423454471,
+        5.6656272411346436,
+        5.821898972115865,
+        5.809824248639549,
+        5.605157593401467,
+        5.683410176416722,
+        5.761718185936532,
+        5.5730509089260565,
+        5.636349442528515,
+        5.56525635428545
+      ]
+    },
+    "k52_lora_mmlu": {
+      "bench": "mmlu",
+      "mean": 5.714736253643036,
+      "method": "lora",
+      "n": 10,
+      "phase": "k52",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_lora_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_lora_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_lora_r64_m0p40_s7_mmlu.json",
+        "llada2_mini_lora_r64_m0p40_s11_mmlu.json",
+        "llada2_mini_lora_r64_m0p40_s31_mmlu.json",
+        "llada2_mini_lora_r64_m0p40_s73_mmlu.json",
+        "llada2_mini_lora_r64_m0p40_s97_mmlu.json",
+        "llada2_mini_lora_r64_m0p40_s199_mmlu.json",
+        "llada2_mini_lora_r64_m0p40_s401_mmlu.json",
+        "llada2_mini_lora_r64_m0p40_s977_mmlu.json"
+      ],
+      "std": 0.1433295927454455,
+      "values": [
+        5.688755855560303,
+        5.573648817062378,
+        5.9842455959320064,
+        5.849958854675293,
+        5.626513892173767,
+        5.860217425346375,
+        5.736652747154236,
+        5.583916639328003,
+        5.69081153011322,
+        5.552641179084778
+      ]
+    },
+    "k52_nara_gsm8k": {
+      "bench": "gsm8k",
+      "mean": 5.533214898413108,
+      "method": "nara",
+      "n": 10,
+      "phase": "k52",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_nara_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_nara_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_nara_r64_m0p40_s7_gsm8k.json",
+        "llada2_mini_nara_r64_m0p40_s11_gsm8k.json",
+        "llada2_mini_nara_r64_m0p40_s31_gsm8k.json",
+        "llada2_mini_nara_r64_m0p40_s73_gsm8k.json",
+        "llada2_mini_nara_r64_m0p40_s97_gsm8k.json",
+        "llada2_mini_nara_r64_m0p40_s199_gsm8k.json",
+        "llada2_mini_nara_r64_m0p40_s401_gsm8k.json",
+        "llada2_mini_nara_r64_m0p40_s977_gsm8k.json"
+      ],
+      "std": 0.11763490425248138,
+      "values": [
+        5.808049739536867,
+        5.3887382768337435,
+        5.4372514169084205,
+        5.481259128015271,
+        5.497549544689418,
+        5.462248026556459,
+        5.600125846400055,
+        5.553925681963755,
+        5.598097851458962,
+        5.504903471768128
+      ]
+    },
+    "k52_nara_humaneval": {
+      "bench": "humaneval",
+      "mean": 5.648164643165542,
+      "method": "nara",
+      "n": 10,
+      "phase": "k52",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_nara_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_nara_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_nara_r64_m0p40_s7_humaneval.json",
+        "llada2_mini_nara_r64_m0p40_s11_humaneval.json",
+        "llada2_mini_nara_r64_m0p40_s31_humaneval.json",
+        "llada2_mini_nara_r64_m0p40_s73_humaneval.json",
+        "llada2_mini_nara_r64_m0p40_s97_humaneval.json",
+        "llada2_mini_nara_r64_m0p40_s199_humaneval.json",
+        "llada2_mini_nara_r64_m0p40_s401_humaneval.json",
+        "llada2_mini_nara_r64_m0p40_s977_humaneval.json"
+      ],
+      "std": 0.06986285966350038,
+      "values": [
+        5.755672065223136,
+        5.648212805026915,
+        5.588988974326995,
+        5.747735796905145,
+        5.590504515461806,
+        5.5688130870098025,
+        5.72506910417138,
+        5.640209116586825,
+        5.599183565232812,
+        5.617257401710603
+      ]
+    },
+    "k52_nara_mmlu": {
+      "bench": "mmlu",
+      "mean": 5.678974190235138,
+      "method": "nara",
+      "n": 10,
+      "phase": "k52",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_nara_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_nara_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_nara_r64_m0p40_s7_mmlu.json",
+        "llada2_mini_nara_r64_m0p40_s11_mmlu.json",
+        "llada2_mini_nara_r64_m0p40_s31_mmlu.json",
+        "llada2_mini_nara_r64_m0p40_s73_mmlu.json",
+        "llada2_mini_nara_r64_m0p40_s97_mmlu.json",
+        "llada2_mini_nara_r64_m0p40_s199_mmlu.json",
+        "llada2_mini_nara_r64_m0p40_s401_mmlu.json",
+        "llada2_mini_nara_r64_m0p40_s977_mmlu.json"
+      ],
+      "std": 0.11819359374121537,
+      "values": [
+        5.9609965763092045,
+        5.505732318878174,
+        5.614494945526123,
+        5.686912350654602,
+        5.6083110704422,
+        5.690575352668763,
+        5.664173098564148,
+        5.71736174583435,
+        5.620609645843506,
+        5.72057479763031
+      ]
+    },
+    "k52_rslora_gsm8k": {
+      "bench": "gsm8k",
+      "mean": 7.228583298857417,
+      "method": "rslora",
+      "n": 10,
+      "phase": "k52",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_rslora_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_rslora_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_rslora_r64_m0p40_s7_gsm8k.json",
+        "llada2_mini_rslora_r64_m0p40_s11_gsm8k.json",
+        "llada2_mini_rslora_r64_m0p40_s31_gsm8k.json",
+        "llada2_mini_rslora_r64_m0p40_s73_gsm8k.json",
+        "llada2_mini_rslora_r64_m0p40_s97_gsm8k.json",
+        "llada2_mini_rslora_r64_m0p40_s199_gsm8k.json",
+        "llada2_mini_rslora_r64_m0p40_s401_gsm8k.json",
+        "llada2_mini_rslora_r64_m0p40_s977_gsm8k.json"
+      ],
+      "std": 0.38238296623042184,
+      "values": [
+        7.363745827852008,
+        7.611703018061224,
+        7.5952118702961515,
+        6.497951314158292,
+        6.896710751542908,
+        7.605868346407343,
+        6.806609870991624,
+        7.28059529065182,
+        7.445845544293037,
+        7.181591154319757
+      ]
+    },
+    "k52_rslora_humaneval": {
+      "bench": "humaneval",
+      "mean": 8.105757616787422,
+      "method": "rslora",
+      "n": 10,
+      "phase": "k52",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_rslora_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_rslora_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_rslora_r64_m0p40_s7_humaneval.json",
+        "llada2_mini_rslora_r64_m0p40_s11_humaneval.json",
+        "llada2_mini_rslora_r64_m0p40_s31_humaneval.json",
+        "llada2_mini_rslora_r64_m0p40_s73_humaneval.json",
+        "llada2_mini_rslora_r64_m0p40_s97_humaneval.json",
+        "llada2_mini_rslora_r64_m0p40_s199_humaneval.json",
+        "llada2_mini_rslora_r64_m0p40_s401_humaneval.json",
+        "llada2_mini_rslora_r64_m0p40_s977_humaneval.json"
+      ],
+      "std": 0.42379994223735246,
+      "values": [
+        7.910543014363545,
+        8.51248799010021,
+        8.721645971623863,
+        7.595116813008378,
+        8.335633865216883,
+        7.512255505817692,
+        7.873644590377808,
+        7.98541836913039,
+        8.636832199445585,
+        7.973997848789867
+      ]
+    },
+    "k52_rslora_mmlu": {
+      "bench": "mmlu",
+      "mean": 7.447631557464599,
+      "method": "rslora",
+      "n": 10,
+      "phase": "k52",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_rslora_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_rslora_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_rslora_r64_m0p40_s7_mmlu.json",
+        "llada2_mini_rslora_r64_m0p40_s11_mmlu.json",
+        "llada2_mini_rslora_r64_m0p40_s31_mmlu.json",
+        "llada2_mini_rslora_r64_m0p40_s73_mmlu.json",
+        "llada2_mini_rslora_r64_m0p40_s97_mmlu.json",
+        "llada2_mini_rslora_r64_m0p40_s199_mmlu.json",
+        "llada2_mini_rslora_r64_m0p40_s401_mmlu.json",
+        "llada2_mini_rslora_r64_m0p40_s977_mmlu.json"
+      ],
+      "std": 0.31638798711527594,
+      "values": [
+        7.3262515525817875,
+        7.597985466003418,
+        7.928118183135986,
+        6.965514970779419,
+        7.550751953125,
+        7.269366817474365,
+        7.060820487976074,
+        7.41277628326416,
+        7.902387294769287,
+        7.462342565536499
+      ]
+    },
+    "k53_dare_lora_gsm8k": {
+      "bench": "gsm8k",
+      "mean": 5.646893143346583,
+      "method": "dare_lora",
+      "n": 10,
+      "phase": "k53",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s7_gsm8k.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s11_gsm8k.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s31_gsm8k.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s73_gsm8k.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s97_gsm8k.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s199_gsm8k.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s401_gsm8k.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s977_gsm8k.json"
+      ],
+      "std": 0.11516960712738517,
+      "values": [
+        5.584176454695903,
+        5.5886151918956415,
+        5.594162805411199,
+        5.666082482703081,
+        5.940110507022259,
+        5.602036020988945,
+        5.586960540566144,
+        5.586552329999737,
+        5.741746709778781,
+        5.578488390404135
+      ]
+    },
+    "k53_dare_lora_humaneval": {
+      "bench": "humaneval",
+      "mean": 5.82308132910147,
+      "method": "dare_lora",
+      "n": 10,
+      "phase": "k53",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s7_humaneval.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s11_humaneval.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s31_humaneval.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s73_humaneval.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s97_humaneval.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s199_humaneval.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s401_humaneval.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s977_humaneval.json"
+      ],
+      "std": 0.07590835840884583,
+      "values": [
+        5.79189179874048,
+        5.77134654580093,
+        5.7760016598352575,
+        5.829217564768907,
+        6.021752944806727,
+        5.8052720500201715,
+        5.778420718704782,
+        5.799131640573827,
+        5.870913493924025,
+        5.786864873839588
+      ]
+    },
+    "k53_dare_lora_mmlu": {
+      "bench": "mmlu",
+      "mean": 5.717433392143249,
+      "method": "dare_lora",
+      "n": 10,
+      "phase": "k53",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s7_mmlu.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s11_mmlu.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s31_mmlu.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s73_mmlu.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s97_mmlu.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s199_mmlu.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s401_mmlu.json",
+        "llada2_mini_dare_lora_lr3en5_r64_m0p40_s977_mmlu.json"
+      ],
+      "std": 0.09945528646807603,
+      "values": [
+        5.6465355548858644,
+        5.654513204574585,
+        5.688915913581848,
+        5.711308692932129,
+        5.964504113197327,
+        5.744317261695862,
+        5.6124796304702755,
+        5.681877655029297,
+        5.782515935897827,
+        5.68736595916748
+      ]
+    },
+    "k53_dora_gsm8k": {
+      "bench": "gsm8k",
+      "mean": 5.608082064993007,
+      "method": "dora",
+      "n": 10,
+      "phase": "k53",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_dora_lr1en4_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s7_gsm8k.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s11_gsm8k.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s31_gsm8k.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s73_gsm8k.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s97_gsm8k.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s199_gsm8k.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s401_gsm8k.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s977_gsm8k.json"
+      ],
+      "std": 0.10756205051768059,
+      "values": [
+        5.583175929230754,
+        5.66025781306107,
+        5.609013478623998,
+        5.552090138355108,
+        5.485655110744566,
+        5.604933791489561,
+        5.802978821465968,
+        5.733111791849317,
+        5.61186835583274,
+        5.437735419276992
+      ]
+    },
+    "k53_dora_humaneval": {
+      "bench": "humaneval",
+      "mean": 5.67814060565902,
+      "method": "dora",
+      "n": 10,
+      "phase": "k53",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_dora_lr1en4_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s7_humaneval.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s11_humaneval.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s31_humaneval.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s73_humaneval.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s97_humaneval.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s199_humaneval.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s401_humaneval.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s977_humaneval.json"
+      ],
+      "std": 0.09290846923531691,
+      "values": [
+        5.745030080399862,
+        5.807282831610703,
+        5.765720168264901,
+        5.610023848894166,
+        5.556999055350699,
+        5.692593298307279,
+        5.781971120252842,
+        5.655477552879147,
+        5.582052334052761,
+        5.5842557665778365
+      ]
+    },
+    "k53_dora_mmlu": {
+      "bench": "mmlu",
+      "mean": 5.688467372226715,
+      "method": "dora",
+      "n": 10,
+      "phase": "k53",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_dora_lr1en4_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s7_mmlu.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s11_mmlu.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s31_mmlu.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s73_mmlu.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s97_mmlu.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s199_mmlu.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s401_mmlu.json",
+        "llada2_mini_dora_lr1en4_r64_m0p40_s977_mmlu.json"
+      ],
+      "std": 0.10344407832519868,
+      "values": [
+        5.721759647369384,
+        5.67813086605072,
+        5.708844178199768,
+        5.591345872879028,
+        5.552029747962951,
+        5.889661263465881,
+        5.6839325180053715,
+        5.818268923759461,
+        5.620297517776489,
+        5.620403186798096
+      ]
+    },
+    "k53_lora_gsm8k": {
+      "bench": "gsm8k",
+      "mean": 5.620933085991814,
+      "method": "lora",
+      "n": 10,
+      "phase": "k53",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_lora_lrfixed_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s7_gsm8k.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s11_gsm8k.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s31_gsm8k.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s73_gsm8k.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s97_gsm8k.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s199_gsm8k.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s401_gsm8k.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s977_gsm8k.json"
+      ],
+      "std": 0.18318821462190762,
+      "values": [
+        5.644758874128224,
+        5.375253213907029,
+        5.809847197268748,
+        5.911727100181435,
+        5.5817962820734195,
+        5.563366917790202,
+        5.761942579314237,
+        5.494741866767542,
+        5.712822357391751,
+        5.3530744710955505
+      ]
+    },
+    "k53_lora_humaneval": {
+      "bench": "humaneval",
+      "mean": 5.676318154683927,
+      "method": "lora",
+      "n": 10,
+      "phase": "k53",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_lora_lrfixed_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s7_humaneval.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s11_humaneval.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s31_humaneval.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s73_humaneval.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s97_humaneval.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s199_humaneval.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s401_humaneval.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s977_humaneval.json"
+      ],
+      "std": 0.09273070096474542,
+      "values": [
+        5.640888423454471,
+        5.6656272411346436,
+        5.821898972115865,
+        5.809824248639549,
+        5.605157593401467,
+        5.683410176416722,
+        5.761718185936532,
+        5.5730509089260565,
+        5.636349442528515,
+        5.56525635428545
+      ]
+    },
+    "k53_lora_mmlu": {
+      "bench": "mmlu",
+      "mean": 5.714736253643036,
+      "method": "lora",
+      "n": 10,
+      "phase": "k53",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_lora_lrfixed_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s7_mmlu.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s11_mmlu.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s31_mmlu.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s73_mmlu.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s97_mmlu.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s199_mmlu.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s401_mmlu.json",
+        "llada2_mini_lora_lrfixed_r64_m0p40_s977_mmlu.json"
+      ],
+      "std": 0.1433295927454455,
+      "values": [
+        5.688755855560303,
+        5.573648817062378,
+        5.9842455959320064,
+        5.849958854675293,
+        5.626513892173767,
+        5.860217425346375,
+        5.736652747154236,
+        5.583916639328003,
+        5.69081153011322,
+        5.552641179084778
+      ]
+    },
+    "k53_nara_gsm8k": {
+      "bench": "gsm8k",
+      "mean": 5.3583745746742695,
+      "method": "nara",
+      "n": 10,
+      "phase": "k53",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_nara_lr3en5_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s7_gsm8k.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s11_gsm8k.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s31_gsm8k.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s73_gsm8k.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s97_gsm8k.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s199_gsm8k.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s401_gsm8k.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s977_gsm8k.json"
+      ],
+      "std": 0.12193627723535279,
+      "values": [
+        5.509959974643224,
+        5.5363510274995535,
+        5.554540025726967,
+        5.2839976022241695,
+        5.262063311301369,
+        5.291223036149309,
+        5.2747043250997105,
+        5.307460902404206,
+        5.284919062918836,
+        5.2785264787753485
+      ]
+    },
+    "k53_nara_humaneval": {
+      "bench": "humaneval",
+      "mean": 5.619512583424405,
+      "method": "nara",
+      "n": 10,
+      "phase": "k53",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_nara_lr3en5_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s7_humaneval.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s11_humaneval.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s31_humaneval.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s73_humaneval.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s97_humaneval.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s199_humaneval.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s401_humaneval.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s977_humaneval.json"
+      ],
+      "std": 0.06649338506585759,
+      "values": [
+        5.677829184183261,
+        5.731053611127342,
+        5.717914300720866,
+        5.539469739285911,
+        5.5759410131268385,
+        5.613401857818046,
+        5.57785818925718,
+        5.582616593779587,
+        5.566837022944195,
+        5.612204322000829
+      ]
+    },
+    "k53_nara_mmlu": {
+      "bench": "mmlu",
+      "mean": 5.497662060928345,
+      "method": "nara",
+      "n": 10,
+      "phase": "k53",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_nara_lr3en5_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s7_mmlu.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s11_mmlu.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s31_mmlu.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s73_mmlu.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s97_mmlu.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s199_mmlu.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s401_mmlu.json",
+        "llada2_mini_nara_lr3en5_r64_m0p40_s977_mmlu.json"
+      ],
+      "std": 0.11268135889619213,
+      "values": [
+        5.6446180973052975,
+        5.611726657867432,
+        5.691080982208252,
+        5.423231258392334,
+        5.405787993431091,
+        5.51176962184906,
+        5.362876428604126,
+        5.429872610092163,
+        5.434657490730285,
+        5.460999468803406
+      ]
+    },
+    "k53_rslora_gsm8k": {
+      "bench": "gsm8k",
+      "mean": 5.8279976907510305,
+      "method": "rslora",
+      "n": 10,
+      "phase": "k53",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s1337_gsm8k.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s42_gsm8k.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s7_gsm8k.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s11_gsm8k.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s31_gsm8k.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s73_gsm8k.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s97_gsm8k.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s199_gsm8k.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s401_gsm8k.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s977_gsm8k.json"
+      ],
+      "std": 0.1953259995336065,
+      "values": [
+        5.72668213912987,
+        5.718195984994398,
+        5.625130048929696,
+        5.708024225965244,
+        6.266550250989727,
+        5.772040277109443,
+        6.079238146520908,
+        5.813974317047432,
+        5.824036140528658,
+        5.746105376294926
+      ]
+    },
+    "k53_rslora_humaneval": {
+      "bench": "humaneval",
+      "mean": 5.916154066673139,
+      "method": "rslora",
+      "n": 10,
+      "phase": "k53",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s1337_humaneval.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s42_humaneval.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s7_humaneval.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s11_humaneval.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s31_humaneval.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s73_humaneval.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s97_humaneval.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s199_humaneval.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s401_humaneval.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s977_humaneval.json"
+      ],
+      "std": 0.4171732124801501,
+      "values": [
+        5.805463340224289,
+        5.794824748504452,
+        5.741839395790565,
+        5.696269321732405,
+        5.9516910750691485,
+        5.678261232085344,
+        7.082129737225975,
+        5.761278044886705,
+        5.788878280942033,
+        5.860905490270475
+      ]
+    },
+    "k53_rslora_mmlu": {
+      "bench": "mmlu",
+      "mean": 5.932784522342682,
+      "method": "rslora",
+      "n": 10,
+      "phase": "k53",
+      "seeds": [
+        1337,
+        42,
+        7,
+        11,
+        31,
+        73,
+        97,
+        199,
+        401,
+        977
+      ],
+      "sources": [
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s1337_mmlu.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s42_mmlu.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s7_mmlu.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s11_mmlu.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s31_mmlu.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s73_mmlu.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s97_mmlu.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s199_mmlu.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s401_mmlu.json",
+        "llada2_mini_rslora_lr3en5_r64_m0p40_s977_mmlu.json"
+      ],
+      "std": 0.23638186842378933,
+      "values": [
+        5.807708501815796,
+        5.788471716880799,
+        5.72093577671051,
+        5.745101504325866,
+        6.144555126190186,
+        5.9593395338058475,
+        6.504075037002563,
+        5.930677732467651,
+        5.8146034536361695,
+        5.91237684059143
+      ]
+    }
+  },
+  "coverage": {
+    "incomplete": [],
+    "missing_files_count": 0,
+    "n_cells_full_n10": 30,
+    "n_cells_partial": 0,
+    "n_cells_total": 30
+  },
+  "generated_at": "2026-05-15T22:31:37.393812+00:00",
+  "metric": "mean_masked_ce",
+  "new_seeds_k55": [
+    11,
+    31,
+    73,
+    97,
+    199,
+    401,
+    977
+  ],
+  "old_seeds": [
+    1337,
+    42,
+    7
+  ],
+  "paired_t_per_phase_bench": {
+    "k52": {
+      "gsm8k": {
+        "dare_lora": {
+          "delta_pct_vs_lora": 35.63231315624941,
+          "lora_mean": 5.620933085991814,
+          "method_mean": 7.623801565495651,
+          "n_paired": 10,
+          "p_bonf_phase": 0.7750889020518854,
+          "raw_p": 0.06459074183765712,
+          "t": 2.1050117571676377
+        },
+        "dora": {
+          "delta_pct_vs_lora": -0.8144192725702011,
+          "lora_mean": 5.620933085991814,
+          "method_mean": 5.575155123641221,
+          "n_paired": 10,
+          "p_bonf_phase": 1.0,
+          "raw_p": 0.3981058455943186,
+          "t": -0.8871090713756388
+        },
+        "nara": {
+          "delta_pct_vs_lora": -1.5605627435293927,
+          "lora_mean": 5.620933085991814,
+          "method_mean": 5.533214898413108,
+          "n_paired": 10,
+          "p_bonf_phase": 1.0,
+          "raw_p": 0.19728121197498905,
+          "t": -1.3922646470516375
+        },
+        "rslora": {
+          "delta_pct_vs_lora": 28.60112704191591,
+          "lora_mean": 5.620933085991814,
+          "method_mean": 7.228583298857417,
+          "n_paired": 10,
+          "p_bonf_phase": 3.217742026362282e-05,
+          "raw_p": 2.681451688635235e-06,
+          "t": 10.351789978487037
+        }
+      },
+      "humaneval": {
+        "dare_lora": {
+          "delta_pct_vs_lora": 28.137808384660012,
+          "lora_mean": 5.676318154683927,
+          "method_mean": 7.27350968035256,
+          "n_paired": 10,
+          "p_bonf_phase": 0.5716452704467738,
+          "raw_p": 0.04763710587056448,
+          "t": 2.2917625183058004
+        },
+        "dora": {
+          "delta_pct_vs_lora": -0.4620153446192418,
+          "lora_mean": 5.676318154683927,
+          "method_mean": 5.65009269379988,
+          "n_paired": 10,
+          "p_bonf_phase": 1.0,
+          "raw_p": 0.2940134489909287,
+          "t": -1.1143205475105071
+        },
+        "nara": {
+          "delta_pct_vs_lora": -0.4959819155864984,
+          "lora_mean": 5.676318154683927,
+          "method_mean": 5.648164643165542,
+          "n_paired": 10,
+          "p_bonf_phase": 1.0,
+          "raw_p": 0.3886363977361121,
+          "t": -0.9058223803820405
+        },
+        "rslora": {
+          "delta_pct_vs_lora": 42.79956471606148,
+          "lora_mean": 5.676318154683927,
+          "method_mean": 8.105757616787422,
+          "n_paired": 10,
+          "p_bonf_phase": 3.3537160557931655e-07,
+          "raw_p": 2.794763379827638e-08,
+          "t": 17.60007785977195
+        }
+      },
+      "mmlu": {
+        "dare_lora": {
+          "delta_pct_vs_lora": 27.792060493183072,
+          "lora_mean": 5.714736253643036,
+          "method_mean": 7.302979210281372,
+          "n_paired": 10,
+          "p_bonf_phase": 0.8106322500280299,
+          "raw_p": 0.06755268750233583,
+          "t": 2.077368444715756
+        },
+        "dora": {
+          "delta_pct_vs_lora": -0.7375550235564619,
+          "lora_mean": 5.714736253643036,
+          "method_mean": 5.672586929321289,
+          "n_paired": 10,
+          "p_bonf_phase": 1.0,
+          "raw_p": 0.3471711946218941,
+          "t": -0.9918830309249274
+        },
+        "nara": {
+          "delta_pct_vs_lora": -0.6257867698636141,
+          "lora_mean": 5.714736253643036,
+          "method_mean": 5.678974190235138,
+          "n_paired": 10,
+          "p_bonf_phase": 1.0,
+          "raw_p": 0.5601649233729276,
+          "t": -0.6049322204439619
+        },
+        "rslora": {
+          "delta_pct_vs_lora": 30.32327699667462,
+          "lora_mean": 5.714736253643036,
+          "method_mean": 7.447631557464599,
+          "n_paired": 10,
+          "p_bonf_phase": 9.150842590570321e-07,
+          "raw_p": 7.6257021588086e-08,
+          "t": 15.690722994849827
+        }
+      }
+    },
+    "k53": {
+      "gsm8k": {
+        "dare_lora": {
+          "delta_pct_vs_lora": 0.4618460486474321,
+          "lora_mean": 5.620933085991814,
+          "method_mean": 5.646893143346583,
+          "n_paired": 10,
+          "p_bonf_phase": 1.0,
+          "raw_p": 0.6949796848026891,
+          "t": 0.4049368332026918
+        },
+        "dora": {
+          "delta_pct_vs_lora": -0.228627895087975,
+          "lora_mean": 5.620933085991814,
+          "method_mean": 5.608082064993007,
+          "n_paired": 10,
+          "p_bonf_phase": 1.0,
+          "raw_p": 0.8390100159961942,
+          "t": -0.20912152958967084
+        },
+        "nara": {
+          "delta_pct_vs_lora": -4.671084094060438,
+          "lora_mean": 5.620933085991814,
+          "method_mean": 5.3583745746742695,
+          "n_paired": 10,
+          "p_bonf_phase": 0.05837823572118635,
+          "raw_p": 0.004864852976765529,
+          "t": -3.7073550835089986
+        },
+        "rslora": {
+          "delta_pct_vs_lora": 3.6838119506395137,
+          "lora_mean": 5.620933085991814,
+          "method_mean": 5.8279976907510305,
+          "n_paired": 10,
+          "p_bonf_phase": 0.4551583752946162,
+          "raw_p": 0.03792986460788469,
+          "t": 2.430846381779972
+        }
+      },
+      "humaneval": {
+        "dare_lora": {
+          "delta_pct_vs_lora": 2.5855346796662206,
+          "lora_mean": 5.676318154683927,
+          "method_mean": 5.82308132910147,
+          "n_paired": 10,
+          "p_bonf_phase": 0.09042114030576621,
+          "raw_p": 0.007535095025480518,
+          "t": 3.427742088519519
+        },
+        "dora": {
+          "delta_pct_vs_lora": 0.03210621613217296,
+          "lora_mean": 5.676318154683927,
+          "method_mean": 5.67814060565902,
+          "n_paired": 10,
+          "p_bonf_phase": 1.0,
+          "raw_p": 0.9545052149641391,
+          "t": 0.058659378515928784
+        },
+        "nara": {
+          "delta_pct_vs_lora": -1.0007467818315974,
+          "lora_mean": 5.676318154683927,
+          "method_mean": 5.619512583424405,
+          "n_paired": 10,
+          "p_bonf_phase": 1.0,
+          "raw_p": 0.1289904844850343,
+          "t": -1.6713326399181228
+        },
+        "rslora": {
+          "delta_pct_vs_lora": 4.22520206678877,
+          "lora_mean": 5.676318154683927,
+          "method_mean": 5.916154066673139,
+          "n_paired": 10,
+          "p_bonf_phase": 1.0,
+          "raw_p": 0.09592523279083448,
+          "t": 1.8592675703719188
+        }
+      },
+      "mmlu": {
+        "dare_lora": {
+          "delta_pct_vs_lora": 0.04719620259804807,
+          "lora_mean": 5.714736253643036,
+          "method_mean": 5.717433392143249,
+          "n_paired": 10,
+          "p_bonf_phase": 1.0,
+          "raw_p": 0.9633884545655924,
+          "t": 0.04719504030693412
+        },
+        "dora": {
+          "delta_pct_vs_lora": -0.4596691824504485,
+          "lora_mean": 5.714736253643036,
+          "method_mean": 5.688467372226715,
+          "n_paired": 10,
+          "p_bonf_phase": 1.0,
+          "raw_p": 0.6092701166976735,
+          "t": -0.5294990728644787
+        },
+        "nara": {
+          "delta_pct_vs_lora": -3.7984988821891816,
+          "lora_mean": 5.714736253643036,
+          "method_mean": 5.497662060928345,
+          "n_paired": 10,
+          "p_bonf_phase": 0.017425811715190434,
+          "raw_p": 0.0014521509762658695,
+          "t": -4.517424103843753
+        },
+        "rslora": {
+          "delta_pct_vs_lora": 3.815543868024434,
+          "lora_mean": 5.714736253643036,
+          "method_mean": 5.932784522342682,
+          "n_paired": 10,
+          "p_bonf_phase": 0.5487948705700219,
+          "raw_p": 0.04573290588083516,
+          "t": 2.3166905682833936
+        }
+      }
+    }
+  },
+  "paper_slug": "top1-fails-dlm-lora-monitors",
+  "protocol": "K52-mini (default LR 10^-4) + K53-h (per-method best LR from Phase C); n=10 seeds",
+  "schema_version": "2.0",
+  "stats_family": {
+    "comparator": "each non-LoRA method vs LoRA at matched seed",
+    "family_size_per_phase": 12,
+    "p_bonf_phase": "min(1.0, raw_p * 12)",
+    "type": "paired-t within (phase, bench), family-corrected by Bonferroni"
+  }
+}

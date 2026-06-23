@@ -1,0 +1,34 @@
+{
+  "baseline_k15a_matched_27": {
+    "final_loss_median": 3.9809,
+    "fire_rate": "27/27",
+    "fire_step_median": 11,
+    "max_grad_median": 20.5342,
+    "n_cells": 27,
+    "step0_top1_mean": 0.3585
+  },
+  "compute_summary": "MDLM-OWT 130M, batch 1, lr 1e-4, 200 steps, institutional HPC 2x H100 NVL, 12 lanes total, wall time ~1.5 min for 27 cells.",
+  "grid": "r in {4,16,64} x rho in {0.05,0.40,0.90} x n=3 seeds {1337, 42, 7} = 27 cells",
+  "intervention_stats": {
+    "collapse_n": "0/27",
+    "final_loss_median": 4.2327,
+    "fire_rate": "27/27",
+    "fire_step_max": 29,
+    "fire_step_median": 11,
+    "max_grad_median": 19.1845,
+    "n_cells": 27,
+    "paired_baseline_n": 27,
+    "paired_delta_final_loss_median": 0.2004,
+    "paired_delta_fire_step_median": 0,
+    "paired_delta_step0_median": 0.0,
+    "paired_max_grad_ratio_median": 0.9748,
+    "step0_top1_mean": 0.3585,
+    "step0_top1_std": 0.1596
+  },
+  "mechanism_implication": "Pre-equilibrium saturation is not preventable by column-orthonormality of LoRA-B. The direction-driven mechanism survives geometric constraints on the LoRA-B update space. Combined with K15n (init-amplitude), K15p (structure), K15o (init-direction PARTIAL), the saturation is structural across LoRA's degrees of freedom.",
+  "preregistered_threshold": "WORKS: max-grad-norm ratio (top-decile / sub-median final loss) <=2.0x AND fire-rate <27/27. PARTIAL: ratio 2.0-2.5x. DOESN'T: ratio >=2.5x or fire 27/27.",
+  "schema": "K15q Stiefel-manifold projection: after each optimizer step, replace each LoRA-B matrix with column-orthonormal basis from QR decomposition. Tests OPTIMIZER-GEOMETRY axis. MDLM-OWT 130M, r in {4,16,64} x rho in {0.05,0.40,0.90} x n=3 seeds = 27 cells, project every 1 step.",
+  "ts_utc": "2026-05-21T01:43:13Z",
+  "verdict": "NEGATIVE (11th honest negative)",
+  "verdict_explanation": "DOESN'T: fire 27/27 unchanged, fire-step median 11 identical to K15a baseline, step-0 top-1 identical (post-step projection has no effect at step 0). Paired max-grad ratio 0.97x (essentially identical) and final-loss delta +0.20 (slightly worse). Forcing column-orthonormality on LoRA-B every step does not prevent the direction-driven saturation. Rules out optimizer-geometry axis."
+}

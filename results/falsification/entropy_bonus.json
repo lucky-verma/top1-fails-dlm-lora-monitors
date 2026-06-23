@@ -1,0 +1,85 @@
+{
+  "baseline_k15a_matched_27": {
+    "final_loss_median": 3.9809,
+    "fire_rate": "27/27",
+    "fire_step_median": 11,
+    "last20_steps_top1_median": 0.662,
+    "max_grad_median": 20.5342,
+    "mean_top1_traj_median": 0.585,
+    "n_cells": 27,
+    "step0_top1_mean": 0.3585,
+    "top1_at_last_median": 0.625
+  },
+  "compute_summary": "MDLM-OWT 130M, institutional HPC 2x H100 NVL, 6 lanes per GPU, ~5 min wall per lambda for 27 cells. Theory-motivated by Pre-Equilibrium Saturation Theorem Corollary 2; intervention attempt 11 of disclosed-negative.",
+  "grid": "r in {4,16,64} x rho in {0.05,0.40,0.90} x n=3 seeds = 27 cells per lambda",
+  "lambda_sweep": {
+    "lambda_0p5": {
+      "aggregate_file": "eval/k15t_mdlm_lambda0p5_aggregate.json",
+      "final_loss_median": 1.1499,
+      "fire_rate": "27/27",
+      "fire_step_median": 11,
+      "intervention_dir": "data/peft_results_w7_k15t_mdlm_lambda0p5",
+      "max_grad_median": 29.7062,
+      "mean_top1_traj_median": 0.583,
+      "n_cells": 27,
+      "paired_delta_final_loss_median": -2.742,
+      "paired_delta_mean_top1_median": -0.008,
+      "paired_max_grad_ratio_median": 0.857,
+      "top1_at_last_median": 0.742
+    },
+    "lambda_10p0": {
+      "aggregate_file": "eval/k15t_mdlm_lambda10p0_aggregate.json",
+      "fire_rate": "27/27",
+      "fire_step_median": 13,
+      "intervention_dir": "data/peft_results_w7_k15t_mdlm_lambda10p0",
+      "mean_top1_traj_median": 0.631,
+      "n_cells": 27,
+      "paired_delta_final_loss_median": -100.756,
+      "paired_delta_mean_top1_median": 0.051,
+      "paired_max_grad_ratio_median": 5.973,
+      "top1_at_last_median": 0.747
+    },
+    "lambda_1p0": {
+      "aggregate_file": "eval/k15t_mdlm_lambda1p0_aggregate.json",
+      "fire_rate": "27/27",
+      "fire_step_median": 12,
+      "intervention_dir": "data/peft_results_w7_k15t_mdlm_lambda1p0",
+      "mean_top1_traj_median": 0.614,
+      "n_cells": 27,
+      "paired_delta_final_loss_median": -7.067,
+      "paired_delta_mean_top1_median": 0.009,
+      "paired_max_grad_ratio_median": 1.057,
+      "top1_at_last_median": 0.758
+    },
+    "lambda_2p0": {
+      "aggregate_file": "eval/k15t_mdlm_lambda2p0_aggregate.json",
+      "fire_rate": "27/27",
+      "fire_step_median": 13,
+      "intervention_dir": "data/peft_results_w7_k15t_mdlm_lambda2p0",
+      "mean_top1_traj_median": 0.626,
+      "n_cells": 27,
+      "paired_delta_final_loss_median": -16.75,
+      "paired_delta_mean_top1_median": 0.029,
+      "paired_max_grad_ratio_median": 1.501,
+      "top1_at_last_median": 0.695
+    },
+    "lambda_5p0": {
+      "aggregate_file": "eval/k15t_mdlm_lambda5p0_aggregate.json",
+      "fire_rate": "27/27",
+      "fire_step_median": 13,
+      "intervention_dir": "data/peft_results_w7_k15t_mdlm_lambda5p0",
+      "mean_top1_traj_median": 0.625,
+      "n_cells": 27,
+      "paired_delta_final_loss_median": -47.639,
+      "paired_delta_mean_top1_median": 0.051,
+      "paired_max_grad_ratio_median": 3.827,
+      "top1_at_last_median": 0.695
+    }
+  },
+  "mechanism_implication": "Entropy bonus -lambda * H(p_theta) does NOT push top-1 mass below baseline at tested lambda. Possible explanations: (a) entropy is computed over full vocabulary so model can be both confident at top-1 AND have high entropy by spreading remaining mass uniformly, (b) the optimizer balances CE+entropy by finding LoRA updates that increase confidence (lower CE) more than they decrease confidence (entropy bonus), (c) at 200-step horizon, the model has not reached asymptote so Corollary 2's lambda > lambda* prediction is in untested regime. Either way, K15t at empirically tested lambda is not a working intervention. Gradient noise scales sharply with lambda (max-grad ratio 0.86 -> 5.97), suggesting training instability not stability.",
+  "preregistered_threshold": "WORKS: fire-rate <27/27 AND top-1 mass at step 199 substantially lower than baseline. PARTIAL: top-1 mass meaningfully reduced but fire-rate unchanged. DOESN'T: fire-rate unchanged AND top-1 mass unchanged or increased.",
+  "schema": "K15t anti-concentration entropy regularizer: add -lambda * mean_entropy(p_theta(.|x_masked)) to loss. Direct theory-motivated penalty against top-1 concentration. MDLM-OWT 130M. Round 11 lambda-sweep over {0.5, 1.0, 2.0, 5.0, 10.0} added 2026-05-21 with paired baseline mean_top1_traj evidence.",
+  "theorem_corollary_2_status": "REFUTED at tested lambda. Theorem (S_t monotone -> 1 under masked-CE convergence) remains supported by D2 derivation + LLaDA 671-cell empirical fire-step universality. Corollary 2 (entropy regularization lowers asymptote in lambda) is NOT supported empirically on MDLM at the 200-step horizon for lambda <= 10. A possible critical lambda* > 10 may exist but at 200-step the regularizer dominates loss (final loss -100 at lambda=10) without crossing top-1 below 0.5.",
+  "ts_utc": "2026-05-21T05:55:00Z",
+  "verdict": "NEGATIVE across lambda in {0.5, 1.0, 2.0, 5.0, 10.0} on MDLM at 200-step horizon (was misclassified as PARTIAL in Round 10 due to false baseline value)."
+}

@@ -1,0 +1,19 @@
+{
+  "interpretation": "Triggered cells (7/27, low-mask high-variance cells at rho=0.05) showed final-loss WORSE by mean +97% after LR halving. Not-triggered cells unchanged (sanity check). Threshold 10x in-training median triggered on sparse-signal cells where high gradient is legitimate (rho=0.05), not on instability. Halving LR there reduced effective learning. Max-grad signal is DIAGNOSTIC of instability (paper's 0.68 precision claim) but NOT a coupled-fix when used naively for LR-halving. A successful intervention must respect the legitimate-high-grad regime (low-mask sparse-signal cells) vs the instability-high-grad regime (high-mask rank-amplification corner).",
+  "intervention_result": "NEGATIVE",
+  "n_total": 27,
+  "n_triggered": 7,
+  "not_triggered_cells_sanity": {
+    "mean_delta_pct": 0.0,
+    "n": 20
+  },
+  "schema": "K15i max-grad-triggered LR-halving (threshold 10x median) on MDLM-OWT 130M",
+  "trigger_rate": 0.25925925925925924,
+  "triggered_cells": {
+    "max_delta_pct": 515.1691948658109,
+    "mean_delta_pct": 97.19379435487096,
+    "median_delta_pct": 28.4393978884446,
+    "min_delta_pct": -17.87661304067847,
+    "n": 7
+  }
+}

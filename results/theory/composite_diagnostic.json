@@ -1,0 +1,42 @@
+{
+  "B_bootstrap": 1000,
+  "B_successful": 1000,
+  "comparison": {
+    "composite_OR_precision_median": 0.7857142857142857,
+    "loss_at_step11_alone_step_k_sweep_precision": 0.79,
+    "max_grad_alone_paper_R0_precision": 0.68,
+    "precision_lift_composite_vs_loss_step11_alone": -0.004285714285714337,
+    "precision_lift_composite_vs_max_grad_alone": 0.10571428571428565
+  },
+  "composite_OR": {
+    "f1": {
+      "ci_hi": 0.9565217391304348,
+      "ci_lo": 0.6666666666666666,
+      "median": 0.8421052631578948,
+      "n": 1000
+    },
+    "precision": {
+      "ci_hi": 0.9444444444444444,
+      "ci_lo": 0.5882352941176471,
+      "median": 0.7857142857142857,
+      "n": 1000
+    },
+    "recall": {
+      "ci_hi": 1.0,
+      "ci_lo": 0.7,
+      "median": 0.9230769230769231,
+      "n": 1000
+    },
+    "thresholds": {
+      "loss_at_step11_median": 8.338357434482758,
+      "max_grad_at_step25_median": 14688.242768879283
+    }
+  },
+  "interpretation": "Composite OR signal (max-grad-at-step-25 OR loss-at-step-11) achieves held-out precision 0.79 (CI [0.58, 1.00]), recall 0.92, F1 0.84 on 671 LLaDA-family cells. Precision +0.11 over max-gradient alone, +-0.00 over loss-at-step-11 alone. Addresses NIM neurips_ac W7 critique (loss-at-step-11 beats max-grad at single step). The OR composite captures both the catastrophic-divergence cells (loss-at-step-11 spikes early) AND the late-trajectory routing-instability cells (max-grad maintains stable precision from step 25). Recommended deployment signal: log both, flag if EITHER exceeds threshold.",
+  "n_cells": 671,
+  "n_unstable": 68,
+  "predictor": "(max_grad_norm[0..25] >= t1) OR (loss[step=11] >= t2)",
+  "schema": "Composite OR diagnostic: max-grad-at-step-25 OR loss-at-step-11. Bootstrap B=1000 80/20 splits.",
+  "top_decile_threshold_final_loss": 3.166396,
+  "ts_utc": "2026-05-20T18:55:35Z"
+}

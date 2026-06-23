@@ -1,0 +1,101 @@
+{
+  "R0_maxgrad": {
+    "test": {
+      "f1": 0.7906976744186047,
+      "fn": 1,
+      "fp": 8,
+      "precision": 0.68,
+      "recall": 0.9444444444444444,
+      "support_neg": 117,
+      "support_pos": 18,
+      "tn": 109,
+      "tp": 17
+    },
+    "threshold": 3872.1197895879873,
+    "train": {
+      "f1": 0.8256880733944953,
+      "fn": 5,
+      "fp": 14,
+      "precision": 0.7627118644067796,
+      "recall": 0.9,
+      "support_neg": 486,
+      "support_pos": 50,
+      "tn": 472,
+      "tp": 45
+    }
+  },
+  "R1_late_over_early": {
+    "test": {
+      "f1": 0.05128205128205128,
+      "fn": 17,
+      "fp": 20,
+      "precision": 0.047619047619047616,
+      "recall": 0.05555555555555555,
+      "support_neg": 117,
+      "support_pos": 18,
+      "tn": 97,
+      "tp": 1
+    },
+    "threshold": 1.102579576805253,
+    "train": {
+      "f1": 0.061068702290076333,
+      "fn": 46,
+      "fp": 77,
+      "precision": 0.04938271604938271,
+      "recall": 0.08,
+      "support_neg": 486,
+      "support_pos": 50,
+      "tn": 409,
+      "tp": 4
+    }
+  },
+  "R2_combined": {
+    "test": {
+      "f1": 0.0,
+      "fn": 18,
+      "fp": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support_neg": 117,
+      "support_pos": 18,
+      "tn": 117,
+      "tp": 0
+    },
+    "thresholds": {
+      "late_over_early": 1.102579576805253,
+      "maxgrad": 3872.1197895879873
+    },
+    "train": {
+      "f1": 0.11320754716981131,
+      "fn": 47,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 0.06,
+      "support_neg": 486,
+      "support_pos": 50,
+      "tn": 486,
+      "tp": 3
+    }
+  },
+  "R_top1_baseline": {
+    "note": "Predict positive every cell (top-1 fires 100%).",
+    "test": {
+      "f1": 0.23529411764705882,
+      "fn": 0,
+      "fp": 117,
+      "precision": 0.13333333333333333,
+      "recall": 1.0,
+      "support_neg": 117,
+      "support_pos": 18,
+      "tn": 0,
+      "tp": 18
+    }
+  },
+  "n_cells_total": 671,
+  "n_test": 135,
+  "n_train": 536,
+  "n_unstable_test": 18,
+  "n_unstable_train": 50,
+  "ts_utc": "2026-05-19T09:10:23Z",
+  "unstable_threshold_final_loss_p90": 3.166396
+}

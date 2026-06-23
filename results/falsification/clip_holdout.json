@@ -1,0 +1,27 @@
+{
+  "deferred_to_v2": "Integrate K15k held-out eval as paper-body downstream task table (currently per-cell hold loss available; multi-benchmark transfer requires checkpoint save + downstream-task harness).",
+  "k15j_intervention_result": "NEGATIVE (delta < 0.1% on final and hold loss)",
+  "k15j_mean_delta_final_pct": 0.001726116986827753,
+  "k15j_mean_delta_hold_pct": -0.008813715004477534,
+  "k15k_correlations_spearman": {
+    "final_loss_vs_hold_loss": {
+      "n": 52,
+      "p": 4.076908714091123e-05,
+      "rho": 0.5368645877829988
+    },
+    "max_grad_vs_final_loss": {
+      "n": 52,
+      "p": 0.011630448964059951,
+      "rho": -0.3473729175565997
+    },
+    "max_grad_vs_hold_loss": {
+      "n": 52,
+      "p": 2.106097750232469e-07,
+      "rho": -0.6476719350704828
+    }
+  },
+  "k15k_interpretation": "On MDLM-OWT 130M, max-grad correlates NEGATIVELY with held-out loss (rho=-0.65, p<1e-7); i.e., high max-grad cells have LOWER held-out loss. This contrasts with the paper's within-LLaDA-family claim (high max-grad on rank-amp top-decile final-loss cells). Consistent with K15e bifurcation: large pretrained DLMs (LLaDA, Dream) show rank-amp instability via max-grad; small dense DLM (MDLM-130M) shows max-grad as learning-activity proxy. Same signal indicates different regimes by model scale.",
+  "n_cells_total": 52,
+  "n_paired": 25,
+  "schema": "K15j (conditional clip rho>=0.7 -> 0.1) + K15k (held-out eval n=10) on MDLM-OWT 130M"
+}

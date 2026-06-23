@@ -1,0 +1,40 @@
+{
+  "baseline_dir": "data/peft_results_w7_k15b_dream_matched_n3",
+  "baseline_matched": {
+    "collapsed_count": 0,
+    "final_loss_median": 2.6875,
+    "fire_rate": "27/27",
+    "fire_step_max": 11,
+    "fire_step_median": 11,
+    "max_grad_median": 354.4212835707257,
+    "mean_top1_traj_median": 0.999766,
+    "n_cells": 27,
+    "step0_top1_mean": 1.0,
+    "top1_at_last_median": 1.0
+  },
+  "family": "Dream-7B",
+  "intervention_dir": "data/peft_results_w7_k15s_dream_confweight",
+  "intervention_stats": {
+    "collapsed_count": 0,
+    "final_loss_median": 2.344067,
+    "fire_rate": "9/9",
+    "fire_step_max": 11,
+    "fire_step_median": 11,
+    "max_grad_median": 780.5819207180363,
+    "mean_top1_traj_median": 0.999766,
+    "n_cells": 9,
+    "step0_top1_mean": 1.0,
+    "top1_at_last_median": 1.0
+  },
+  "intervention_tag": "k15s_dream_confweight",
+  "paired_stats": {
+    "paired_delta_final_loss_median": -0.15663099999999996,
+    "paired_delta_fire_step_median": 0,
+    "paired_delta_mean_top1_median": -7.80000000000225e-05,
+    "paired_max_grad_ratio_median": 0.8534619633547179,
+    "paired_n": 9
+  },
+  "preregistered_threshold": "WORKS: fire-rate <full + final-loss bounded. PARTIAL: fire-step >20. DOESN'T: fire-rate unchanged + fire-step ~11.",
+  "schema": "K15s confidence-weighted loss on Dream-7B (lr=2e-6, family-canonical). 9 cells r=64 x rho{0.05,0.40,0.90} x n=3.",
+  "ts_utc": "2026-05-21T05:40:58Z"
+}

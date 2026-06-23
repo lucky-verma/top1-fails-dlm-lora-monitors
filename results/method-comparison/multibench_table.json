@@ -1,0 +1,43 @@
+{
+  "benchmarks": {
+    "gsm8k": {
+      "delta_r4_minus_r64": 0.7441570768309329,
+      "n_examples": 1319,
+      "n_seeds": 3,
+      "name": "GSM8K-test",
+      "paired_t_p_bonf_m180": 1.0,
+      "paired_t_p_raw": 0.6531215167257209,
+      "r4_m0p40_mean": 2.6608661479470346,
+      "r4_m0p40_std": 2.3034861212786133,
+      "r64_m0p40_mean": 1.9167090711161014,
+      "r64_m0p40_std": 0.32303890907639665
+    },
+    "humaneval": {
+      "delta_r4_minus_r64": -0.5366264096218945,
+      "n_examples": 164,
+      "n_seeds": 3,
+      "name": "HumanEval",
+      "paired_t_p_bonf_m180": 1.0,
+      "paired_t_p_raw": 0.10903099418079941,
+      "r4_m0p40_mean": 1.101791918925123,
+      "r4_m0p40_std": 0.027747858928671296,
+      "r64_m0p40_mean": 1.638418328547017,
+      "r64_m0p40_std": 0.30893562742834785
+    },
+    "mmlu": {
+      "delta_r4_minus_r64": -0.16652200852582832,
+      "n_examples": 250,
+      "n_seeds": 3,
+      "name": "MMLU-subset",
+      "paired_t_p_bonf_m180": 1.0,
+      "paired_t_p_raw": 0.0673897706900983,
+      "r4_m0p40_mean": 1.0987014817520977,
+      "r4_m0p40_std": 0.0397263327096267,
+      "r64_m0p40_mean": 1.2652234902779262,
+      "r64_m0p40_std": 0.11302199488714082
+    }
+  },
+  "description": "K7 multi-benchmark masked-CE stable-window rank-gap table for When Top-1 Fails manuscript. Delta is r4 minus r64 at rho=0.40; positive means r64 lower masked CE. Values are seed means over {1337,42,7}.",
+  "n_evals": 108,
+  "source": "eval/multibench_results.json"
+}

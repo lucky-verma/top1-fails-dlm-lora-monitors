@@ -1,0 +1,51 @@
+{
+  "interpretation": "If step-0 freq > 0.5: pretrained argmax concentrated, mechanism is pretrained+LoRA-init-applied; if < 0.5: training-driven concentration.",
+  "per_family": {
+    "Dream-7B-matched": {
+      "frac_above_0p5": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "min": 1.0,
+      "model_size_B": 7.0,
+      "n": 45,
+      "std": 0.0
+    },
+    "LLaDA-MoE-A1B": {
+      "frac_above_0p5": 1.0,
+      "max": 1.0,
+      "mean": 0.9427083333333334,
+      "min": 0.6953,
+      "model_size_B": 7.0,
+      "n": 12,
+      "std": 0.09424512968688074
+    },
+    "LLaDA2.0-mini-crit12": {
+      "frac_above_0p5": 1.0,
+      "max": 0.9453,
+      "mean": 0.8422491666666667,
+      "min": 0.75,
+      "model_size_B": 15.93,
+      "n": 120,
+      "std": 0.044609926535673736
+    },
+    "LLaDA2.1-mini": {
+      "frac_above_0p5": 1.0,
+      "max": 0.6484,
+      "mean": 0.6418999999999999,
+      "min": 0.6406,
+      "model_size_B": 15.0,
+      "n": 12,
+      "std": 0.003036145882229951
+    },
+    "MDLM-OWT": {
+      "frac_above_0p5": 0.2,
+      "max": 0.6562,
+      "mean": 0.3625,
+      "min": 0.1172,
+      "model_size_B": 0.13,
+      "n": 45,
+      "std": 0.15083357927319646
+    }
+  },
+  "schema": "K15e step-0 top-1 freq across DLM families (LoRA-just-applied, no training)"
+}

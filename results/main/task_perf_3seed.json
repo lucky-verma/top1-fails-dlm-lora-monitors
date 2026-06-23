@@ -1,0 +1,250 @@
+{
+  "cells": {
+    "r4_m0p40": {
+      "eval_holdout_loss": {
+        "mean": 0.43461933333333336,
+        "n": 3,
+        "std": 0.08069723059271199
+      },
+      "files": [
+        "results/task_3seed/r4_m0p40_s7.json",
+        "results/task_3seed/r4_m0p40_s42.json",
+        "results/task_3seed/r4_m0p40_s1337.json"
+      ],
+      "final_loss": {
+        "mean": 0.09002966666666666,
+        "n": 3,
+        "std": 0.14711458226951307
+      },
+      "mask_ratio": 0.4,
+      "max_grad_norm": {
+        "mean": 17.956733213476934,
+        "n": 3,
+        "std": 1.6925113495001625
+      },
+      "rank": 4,
+      "seeds": [
+        7,
+        42,
+        1337
+      ]
+    },
+    "r4_m0p90": {
+      "eval_holdout_loss": {
+        "mean": 0.5702256666666666,
+        "n": 3,
+        "std": 0.05694236403885363
+      },
+      "files": [
+        "results/task_3seed/r4_m0p90_s7.json",
+        "results/task_3seed/r4_m0p90_s42.json",
+        "results/task_3seed/r4_m0p90_s1337.json"
+      ],
+      "final_loss": {
+        "mean": 1.1818756666666668,
+        "n": 3,
+        "std": 0.1627331442648771
+      },
+      "mask_ratio": 0.9,
+      "max_grad_norm": {
+        "mean": 73.85408250265921,
+        "n": 3,
+        "std": 22.525363298583137
+      },
+      "rank": 4,
+      "seeds": [
+        7,
+        42,
+        1337
+      ]
+    },
+    "r64_m0p40": {
+      "eval_holdout_loss": {
+        "mean": 0.4231793333333333,
+        "n": 3,
+        "std": 0.0990219904987439
+      },
+      "files": [
+        "results/task_3seed/r64_m0p40_s7.json",
+        "results/task_3seed/r64_m0p40_s42.json",
+        "results/task_3seed/r64_m0p40_s1337.json"
+      ],
+      "final_loss": {
+        "mean": 0.030548666666666665,
+        "n": 3,
+        "std": 0.05074046158967548
+      },
+      "mask_ratio": 0.4,
+      "max_grad_norm": {
+        "mean": 20.96051991664973,
+        "n": 3,
+        "std": 10.94811709695045
+      },
+      "rank": 64,
+      "seeds": [
+        7,
+        42,
+        1337
+      ]
+    },
+    "r64_m0p90": {
+      "eval_holdout_loss": {
+        "mean": 0.4840873333333333,
+        "n": 3,
+        "std": 0.03855993454783515
+      },
+      "files": [
+        "results/task_3seed/r64_m0p90_s7.json",
+        "results/task_3seed/r64_m0p90_s42.json",
+        "results/task_3seed/r64_m0p90_s1337.json"
+      ],
+      "final_loss": {
+        "mean": 1.0187456666666668,
+        "n": 3,
+        "std": 0.31077262219882457
+      },
+      "mask_ratio": 0.9,
+      "max_grad_norm": {
+        "mean": 96.37215076281409,
+        "n": 3,
+        "std": 34.464236752390555
+      },
+      "rank": 64,
+      "seeds": [
+        7,
+        42,
+        1337
+      ]
+    }
+  },
+  "contrasts": {
+    "cross_mask_m0p90_minus_m0p40_at_r4": {
+      "baseline": {
+        "mask_ratio": 0.4,
+        "rank": 4
+      },
+      "cohen_dz": 1.1253566948072553,
+      "comparison": {
+        "mask_ratio": 0.9,
+        "rank": 4
+      },
+      "diff_comparison_minus_baseline": [
+        -0.0029839999999999867,
+        0.21562399999999998,
+        0.194179
+      ],
+      "mean_diff": 0.13560633333333333,
+      "paired_by_seed": [
+        7,
+        42,
+        1337
+      ],
+      "paired_t": {
+        "p_uncorrected": 0.19059911974401045,
+        "statistic": 1.9491749720439489
+      },
+      "std_diff": 0.12050075674589487,
+      "wilcoxon": {
+        "p_uncorrected": 0.5,
+        "statistic": 1.0
+      }
+    },
+    "cross_mask_m0p90_minus_m0p40_at_r64": {
+      "baseline": {
+        "mask_ratio": 0.4,
+        "rank": 64
+      },
+      "cohen_dz": 0.9436148837096544,
+      "comparison": {
+        "mask_ratio": 0.9,
+        "rank": 64
+      },
+      "diff_comparison_minus_baseline": [
+        -0.013490000000000002,
+        0.094223,
+        0.101991
+      ],
+      "mean_diff": 0.060908,
+      "paired_by_seed": [
+        7,
+        42,
+        1337
+      ],
+      "paired_t": {
+        "p_uncorrected": 0.243794351981911,
+        "statistic": 1.6343889213633191
+      },
+      "std_diff": 0.06454751938688272,
+      "wilcoxon": {
+        "p_uncorrected": 0.5,
+        "statistic": 1.0
+      }
+    },
+    "high_mask_rank_r64_minus_r4_at_m0p90": {
+      "baseline": {
+        "mask_ratio": 0.9,
+        "rank": 4
+      },
+      "cohen_dz": -1.13894232844448,
+      "comparison": {
+        "mask_ratio": 0.9,
+        "rank": 64
+      },
+      "diff_comparison_minus_baseline": [
+        -0.00020300000000006424,
+        -0.142569,
+        -0.115643
+      ],
+      "mean_diff": -0.08613833333333336,
+      "paired_by_seed": [
+        7,
+        42,
+        1337
+      ],
+      "paired_t": {
+        "p_uncorrected": 0.18726889553767156,
+        "statistic": -1.9727059797566386
+      },
+      "std_diff": 0.07563010977998992,
+      "wilcoxon": {
+        "p_uncorrected": 0.25,
+        "statistic": 0.0
+      }
+    },
+    "within_window_rank_r64_minus_r4_at_m0p40": {
+      "baseline": {
+        "mask_ratio": 0.4,
+        "rank": 4
+      },
+      "cohen_dz": -0.6064242998917181,
+      "comparison": {
+        "mask_ratio": 0.4,
+        "rank": 64
+      },
+      "diff_comparison_minus_baseline": [
+        0.010302999999999951,
+        -0.02116800000000002,
+        -0.023455000000000004
+      ],
+      "mean_diff": -0.011440000000000025,
+      "paired_by_seed": [
+        7,
+        42,
+        1337
+      ],
+      "paired_t": {
+        "p_uncorrected": 0.4037495082369922,
+        "statistic": -1.0503576983568412
+      },
+      "std_diff": 0.018864679403583808,
+      "wilcoxon": {
+        "p_uncorrected": 0.5,
+        "statistic": 1.0
+      }
+    }
+  },
+  "generated_utc": "2026-05-04T00:00:00Z",
+  "metric_note": "eval_holdout_loss is masked CE on 20 held-out GSM8K-style Q&A pairs with eval_mask_ratio=0.40; all hypothesis tests are underpowered at n=3 and are descriptive only.",
+  "schema_version": "1.0",
+  "source_glob": "results/task_3seed/*.json"
+}

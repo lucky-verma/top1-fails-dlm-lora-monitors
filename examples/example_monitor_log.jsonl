@@ -1,0 +1,2 @@
+{"collapsed": false, "loss": 4.08, "mask_ratio": 0.4, "max_grad_norm": 28.2, "model_family": "LLaDA", "rank": 64, "step": 0, "top1_token_freq": 0.86}
+{"collapsed": false, "loss": 2.31, "mask_ratio": 0.4, "max_grad_norm": 18.4, "model_family": "LLaDA", "rank": 64, "step": 11, "top1_token_freq": 0.91}

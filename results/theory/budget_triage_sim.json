@@ -1,0 +1,161 @@
+{
+  "B_splits": 200,
+  "decision_rule": {
+    "horizon_steps": 200,
+    "note": "Retrospective simulation only; not a prospective controller.",
+    "promote_compute_claim_if": "post_trigger_saved >= 0.40 and selected_rel_gap <= 0.05"
+  },
+  "n_cells": 671,
+  "n_top_decile": 68,
+  "p90_final_loss": 3.166396,
+  "per_cohort": {
+    "llada21_mini_transfer": 12,
+    "llada2_mini_crit12": 120,
+    "llada2_mini_full": 144,
+    "llada_method_comp": 395
+  },
+  "policies": {
+    "k25_budget_oracle_guard": {
+      "k": 25,
+      "metrics": {
+        "n": 200,
+        "oracle_flag_rate": 0.825,
+        "oracle_retained_rate": 0.205,
+        "pass_rate": 0.205,
+        "post_trigger_saved": {
+          "ci_hi": 1.0,
+          "ci_lo": 0.8887037037037037,
+          "median": 0.9703703703703703
+        },
+        "selected_abs_gap": {
+          "ci_hi": 0.09455854999999999,
+          "ci_lo": 0.0,
+          "median": 0.000113
+        },
+        "selected_rel_gap": {
+          "ci_hi": 51150000000.0,
+          "ci_lo": 0.0,
+          "median": 49214.5
+        },
+        "total_step_saved": {
+          "ci_hi": 0.875,
+          "ci_lo": 0.7776157407407407,
+          "median": 0.8490740740740741
+        }
+      },
+      "policy": "budget_oracle_guard",
+      "threshold": {
+        "ci_hi": 5.9623235950525215,
+        "ci_lo": 2.7660045974789917,
+        "median": 2.907697032773109
+      }
+    },
+    "k25_diagnostic_f1": {
+      "k": 25,
+      "metrics": {
+        "n": 200,
+        "oracle_flag_rate": 0.0,
+        "oracle_retained_rate": 1.0,
+        "pass_rate": 0.0,
+        "post_trigger_saved": {
+          "ci_hi": 0.17777777777777778,
+          "ci_lo": 0.07407407407407407,
+          "median": 0.11851851851851852
+        },
+        "selected_abs_gap": {
+          "ci_hi": 0.0,
+          "ci_lo": 0.0,
+          "median": 0.0
+        },
+        "selected_rel_gap": {
+          "ci_hi": 0.0,
+          "ci_lo": 0.0,
+          "median": 0.0
+        },
+        "total_step_saved": {
+          "ci_hi": 0.15555555555555556,
+          "ci_lo": 0.06481481481481481,
+          "median": 0.10370370370370371
+        }
+      },
+      "policy": "diagnostic_f1",
+      "threshold": {
+        "ci_hi": 4967.959457647475,
+        "ci_lo": 1408.865732982303,
+        "median": 3366.4624568623603
+      }
+    },
+    "k50_budget_oracle_guard": {
+      "k": 50,
+      "metrics": {
+        "n": 200,
+        "oracle_flag_rate": 0.82,
+        "oracle_retained_rate": 0.205,
+        "pass_rate": 0.205,
+        "post_trigger_saved": {
+          "ci_hi": 1.0,
+          "ci_lo": 0.9333333333333333,
+          "median": 0.9925925925925926
+        },
+        "selected_abs_gap": {
+          "ci_hi": 0.041568,
+          "ci_lo": 0.0,
+          "median": 7e-06
+        },
+        "selected_rel_gap": {
+          "ci_hi": 41568000000.0,
+          "ci_lo": 0.0,
+          "median": 847.3265306122449
+        },
+        "total_step_saved": {
+          "ci_hi": 0.75,
+          "ci_lo": 0.7,
+          "median": 0.7444444444444445
+        }
+      },
+      "policy": "budget_oracle_guard",
+      "threshold": {
+        "ci_hi": 5.865167845966387,
+        "ci_lo": 3.108170607563025,
+        "median": 3.174556288655462
+      }
+    },
+    "k50_diagnostic_f1": {
+      "k": 50,
+      "metrics": {
+        "n": 200,
+        "oracle_flag_rate": 0.0,
+        "oracle_retained_rate": 1.0,
+        "pass_rate": 0.0,
+        "post_trigger_saved": {
+          "ci_hi": 0.17777777777777778,
+          "ci_lo": 0.07388888888888889,
+          "median": 0.11851851851851852
+        },
+        "selected_abs_gap": {
+          "ci_hi": 0.0,
+          "ci_lo": 0.0,
+          "median": 0.0
+        },
+        "selected_rel_gap": {
+          "ci_hi": 0.0,
+          "ci_lo": 0.0,
+          "median": 0.0
+        },
+        "total_step_saved": {
+          "ci_hi": 0.13333333333333333,
+          "ci_lo": 0.05541666666666667,
+          "median": 0.08888888888888889
+        }
+      },
+      "policy": "diagnostic_f1",
+      "threshold": {
+        "ci_hi": 4877.724139130704,
+        "ci_lo": 1795.5582309500132,
+        "median": 3721.223180623425
+      }
+    }
+  },
+  "schema": "retrospective_max_gradient_budget_triage_v1",
+  "ts_utc": "2026-05-24T22:03:35Z"
+}

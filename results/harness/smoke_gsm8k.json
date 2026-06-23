@@ -1,0 +1,66 @@
+{
+  "benchmark": "gsm8k",
+  "config": {
+    "denoise_steps": 32,
+    "device": "cuda",
+    "dtype": "auto",
+    "eval_mask_ratio": 0.4,
+    "max_length": 512,
+    "max_new_tokens": 96,
+    "mock_model": true,
+    "model_name": "llada2_mini",
+    "qlora": false,
+    "temperature": 0.0
+  },
+  "created_at_unix": 1777937612.928,
+  "data_source": "fixture:fallback_gsm8k",
+  "gpu_smoke_pending": true,
+  "mode": "mock",
+  "paper_evidence": false,
+  "records": [
+    {
+      "correct": true,
+      "prediction": "4",
+      "question": "Mia has 2 apples and buys 2 more. How many apples does she have?",
+      "raw_output": "4",
+      "target": "4"
+    },
+    {
+      "correct": false,
+      "prediction": "8",
+      "question": "A train has 10 cars and leaves 3 behind. How many cars remain?",
+      "raw_output": "8",
+      "target": "7"
+    },
+    {
+      "correct": true,
+      "prediction": "2",
+      "question": "There are 6 pencils split equally across 3 bags. How many per bag?",
+      "raw_output": "2",
+      "target": "2"
+    },
+    {
+      "correct": false,
+      "prediction": "1",
+      "question": "Sam reads 5 pages on Monday and 4 pages on Tuesday. Total pages?",
+      "raw_output": "1",
+      "target": "9"
+    },
+    {
+      "correct": false,
+      "prediction": "4",
+      "question": "A pack has 12 cards. Kim gives away 5. How many cards are left?",
+      "raw_output": "4",
+      "target": "7"
+    }
+  ],
+  "summary": {
+    "correct": 2,
+    "n": 5,
+    "non_trivial_score": true,
+    "score": 0.4,
+    "sec_per_example": 0.0,
+    "under_30s_per_example": true,
+    "wall_time_s": 0.0
+  }
+}

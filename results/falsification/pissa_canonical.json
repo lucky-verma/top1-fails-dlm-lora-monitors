@@ -1,0 +1,36 @@
+{
+  "baseline_k15a_matched_27": {
+    "final_loss_median": 3.9809,
+    "fire_rate": "27/27",
+    "fire_step_median": 11,
+    "max_grad_median": 20.5342,
+    "n_cells": 27,
+    "step0_top1_mean": 0.3585
+  },
+  "compute_summary": "MDLM-OWT 130M, batch 1, lr 1e-4, 200 steps, institutional HPC 2x H100 NVL, 12 lanes total, wall time ~1.5 min for 27 cells. Auto-scale to LLaDA + Dream NOT triggered (preregistered: WORKS gate required fire-rate <27/27).",
+  "grid": "r in {4,16,64} x rho in {0.05,0.40,0.90} x n=3 seeds {1337, 42, 7} = 27 cells",
+  "implementation_verification": {
+    "expected": "~0.0 (verifies W-subtraction restores base forward at step 0)",
+    "paired_step0_loss_delta_median": -0.001254
+  },
+  "intervention_stats": {
+    "final_loss_median": 3.5521,
+    "fire_rate": "27/27",
+    "fire_step_max": 19,
+    "fire_step_median": 11,
+    "max_grad_median": 144.2105,
+    "n_cells": 27,
+    "paired_delta_final_loss_median": -0.4288,
+    "paired_delta_fire_step_median": 0,
+    "paired_max_grad_ratio_median": 4.4949,
+    "step0_top1_mean": 0.3536
+  },
+  "mechanism_implication": "Combined with K15o (init-only PARTIAL with grad-explosion confound), K15r (canonical CLEAN negative) brackets the init-direction axis: neither shortcut nor canonical PiSSA prevents the fire-rate identity. The pre-equilibrium saturation is direction-driven structurally \u2014 independent of where LoRA's init direction is placed.",
+  "paper_quality_finding": "Paired final-loss delta -0.43 (K15r LOWER than baseline) confirms PiSSA's AR-LoRA convergence-speedup claim TRANSFERS to DLM PEFT, but does NOT prevent pre-equilibrium top-1 saturation. PiSSA improves convergence; it does not address the diagnostic this paper centers on.",
+  "preregistered_threshold": "WORKS: fire-rate <27/27 AND max-grad <10x baseline. PARTIAL: fire-step >20. DOESN'T: fire 27/27 + fire-step ~11.",
+  "prior_art_note": "PiSSA (Meng et al. 2024, NeurIPS24 spotlight): canonical form with W-subtraction reports ~2x convergence speedup on AR LoRA. We confirm the speedup transfers to DLM PEFT (paired final-loss delta -0.43) AND test the orthogonal claim that init-direction prevents top-1 saturation; the latter is refuted.",
+  "schema": "K15r CANONICAL PiSSA: W-subtraction + LoRA A,B init rescaled by sqrt(r/alpha). Step-0 forward IDENTICAL to base model (verified: paired step0_loss delta = -0.001). Tests init-direction axis CLEANLY (no first-update overshoot, unlike K15o init-only).",
+  "ts_utc": "2026-05-21T02:30:43Z",
+  "verdict": "NEGATIVE (12th honest negative \u2014 clean init-direction falsification)",
+  "verdict_explanation": "DOESN'T: fire 27/27 unchanged, paired fire-step delta 0 (median 11 vs baseline 11), paired max-grad ratio 4.5x (bounded, no explosion vs K15o's 200000x). Even starting LoRA in pretrained's top-r spectral subspace WITH base-forward equivalence at step 0, masked-CE gradient drives argmax concentration with identical timing. Implementation verified correct via paired step0_loss delta -0.001."
+}

@@ -1,0 +1,33 @@
+{
+  "baseline_k15a_matched_27": {
+    "final_loss_median": 3.9809,
+    "fire_rate": "27/27",
+    "fire_step_median": 11,
+    "max_grad_median": 20.5342,
+    "n_cells": 27,
+    "step0_top1_mean": 0.3585
+  },
+  "compute_summary": "MDLM-OWT 130M, batch 1, lr 1e-4, 200 steps, institutional HPC 2x H100 NVL, 12 lanes total, wall time ~1.5 min for 27 cells.",
+  "grid": "r in {4,16,64} x rho in {0.05,0.40,0.90} x n=3 seeds {1337, 42, 7} = 27 cells",
+  "intervention_stats": {
+    "collapse_n": "0/27",
+    "final_loss_median": 3.952,
+    "fire_rate": "27/27",
+    "fire_step_max": 33,
+    "fire_step_median": 11,
+    "max_grad_median": 35.0071,
+    "n_cells": 27,
+    "paired_baseline_n": 27,
+    "paired_delta_final_loss_median": -0.0074,
+    "paired_delta_fire_step_median": 0,
+    "paired_delta_step0_median": 0.0,
+    "paired_max_grad_ratio_median": 2.0009,
+    "step0_top1_mean": 0.3585,
+    "step0_top1_std": 0.1596
+  },
+  "preregistered_threshold": "WORKS: param-side Gini at r=64/rho=0.95 corner <=0.30 AND fire-rate <27/27. PARTIAL: Gini 0.30-0.40. DOESN'T: Gini >=0.40 + fire 27/27.",
+  "schema": "K15p GraLoRA-style rank-bottleneck intervention: effective r = max(1, r // 4), alpha matched to FULL rank for magnitude parity. Tests ADAPTER-STRUCTURE axis. MDLM-OWT 130M, r in {4,16,64} x rho in {0.05,0.40,0.90} x n=3 seeds = 27 cells.",
+  "ts_utc": "2026-05-21T01:43:13Z",
+  "verdict": "NEGATIVE (10th honest negative)",
+  "verdict_explanation": "DOESN'T: fire 27/27 unchanged, fire-step median 11 identical to K15a baseline, step-0 top-1 identical, paired delta on all metrics ~0. Rank-bottleneck (effective rank reduced 4x while alpha-scaled to FULL rank) does not prevent saturation. Rules out adapter-structure axis. Param-side max-grad ratio 2.0x vs baseline (lower effective rank with full alpha = larger per-matrix update magnitude) but saturation pattern unchanged."
+}

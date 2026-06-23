@@ -1,0 +1,27 @@
+{
+  "collapse_rate": 0.0,
+  "final_loss_distribution": {
+    "max": 6.797542,
+    "mean": 2.677372111111111,
+    "median": 2.660806,
+    "min": 0.000617
+  },
+  "fire_rate": 1.0,
+  "fire_step_distribution": {
+    "max": 33,
+    "mean": 15.222222222222221,
+    "median": 11,
+    "min": 11
+  },
+  "kills_reviewer_attack": "R2 (200-step horizon too short)",
+  "max_grad_norm_distribution": {
+    "max": 1159.2944690168688,
+    "mean": 116.06602114320305,
+    "median": 36.67076807216496,
+    "min": 13.391261580387807
+  },
+  "n_cells": 27,
+  "n_collapse": 0,
+  "n_fire": 27,
+  "schema": "K15d MDLM-OWT long-horizon (2000-step) validation"
+}

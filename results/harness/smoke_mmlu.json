@@ -1,0 +1,76 @@
+{
+  "benchmark": "mmlu",
+  "config": {
+    "denoise_steps": 32,
+    "device": "cuda",
+    "dtype": "auto",
+    "eval_mask_ratio": 0.4,
+    "max_length": 768,
+    "max_new_tokens": 4,
+    "mock_model": true,
+    "model_name": "llada2_mini",
+    "qlora": false,
+    "temperature": 0.0
+  },
+  "created_at_unix": 1777937612.963,
+  "data_source": "fixture:fallback_mmlu_8subject",
+  "gpu_smoke_pending": true,
+  "mode": "mock",
+  "paper_evidence": false,
+  "records": [
+    {
+      "correct": false,
+      "prediction": "C",
+      "question": "Which structure consists of a set with an associative binary operation and identity?",
+      "subject": "abstract_algebra",
+      "target": "B"
+    },
+    {
+      "correct": false,
+      "prediction": "A",
+      "question": "Which data structure usually gives FIFO removal?",
+      "subject": "college_computer_science",
+      "target": "B"
+    },
+    {
+      "correct": false,
+      "prediction": "C",
+      "question": "What is the slope of y = 3x + 2?",
+      "subject": "high_school_mathematics",
+      "target": "B"
+    },
+    {
+      "correct": true,
+      "prediction": "A",
+      "question": "Which loss is commonly used for binary logistic regression?",
+      "subject": "machine_learning",
+      "target": "A"
+    },
+    {
+      "correct": false,
+      "prediction": "D",
+      "question": "The statement P -> Q is false exactly when:",
+      "subject": "formal_logic",
+      "target": "A"
+    }
+  ],
+  "subjects": [
+    "abstract_algebra",
+    "college_computer_science",
+    "high_school_mathematics",
+    "machine_learning",
+    "formal_logic",
+    "professional_law",
+    "philosophy",
+    "high_school_physics"
+  ],
+  "summary": {
+    "correct": 1,
+    "n": 5,
+    "non_trivial_score": true,
+    "score": 0.2,
+    "sec_per_example": 0.0,
+    "under_30s_per_example": true,
+    "wall_time_s": 0.0
+  }
+}

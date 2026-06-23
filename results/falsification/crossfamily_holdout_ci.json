@@ -1,0 +1,83 @@
+{
+  "bootstrap_B1000": {
+    "baseline_precision_ci_95": [
+      0.04477611940298507,
+      0.1791044776119403
+    ],
+    "baseline_precision_median": 0.1044776119402985,
+    "disjoint_lower_bound_test": "OVERLAP \u2014 CI overlaps with baseline",
+    "max_grad_threshold_precision_ci_95": [
+      0.03389830508474576,
+      0.18333333333333332
+    ],
+    "max_grad_threshold_precision_median": 0.10416666666666667
+  },
+  "corpus": "LLaDA 671 + Dream-7B 100 + MDLM-OWT 45 = 816 cells (LLaDA-only subset for matched 671 also derivable)",
+  "n_cells_total": 334,
+  "n_unstable": 35,
+  "per_family": {
+    "Dream": 145,
+    "LLaDA": 144,
+    "MDLM": 45
+  },
+  "per_family_metrics_within": {
+    "Dream": {
+      "baseline_precision": 0.13793103448275862,
+      "n_cells": 145,
+      "n_test": 29,
+      "n_train": 116,
+      "precision_lift_vs_baseline": 0.0,
+      "test_f1": 0,
+      "test_precision": 0.0,
+      "test_recall": 0.0,
+      "threshold": 927.1577548976114,
+      "train_f1": 0.19999999999999998
+    },
+    "LLaDA": {
+      "baseline_precision": 0.06896551724137931,
+      "n_cells": 144,
+      "n_test": 29,
+      "n_train": 115,
+      "precision_lift_vs_baseline": 0.763157894736842,
+      "test_f1": 0.09523809523809525,
+      "test_precision": 0.05263157894736842,
+      "test_recall": 0.5,
+      "threshold": 26.589241153119925,
+      "train_f1": 0.3333333333333333
+    },
+    "MDLM": {
+      "baseline_precision": 0.1111111111111111,
+      "n_cells": 45,
+      "n_test": 9,
+      "n_train": 36,
+      "precision_lift_vs_baseline": 1.0,
+      "test_f1": 0.19999999999999998,
+      "test_precision": 0.1111111111111111,
+      "test_recall": 1.0,
+      "threshold": 10.881324157625407,
+      "train_f1": 0.20512820512820512
+    }
+  },
+  "per_family_unstable_thresholds": {
+    "Dream": 3.015625,
+    "LLaDA": 2.232782,
+    "MDLM": 5.491558
+  },
+  "schema": "K15g cross-family held-out 80/20 split + bootstrap precision CI",
+  "single_split_seed42": {
+    "baseline_precision": 0.04477611940298507,
+    "n_test": 67,
+    "n_train": 267,
+    "precision_lift_vs_baseline": 0.9305555555555556,
+    "test_metrics": {
+      "f1": 0.0784313725490196,
+      "fn": 1,
+      "fp": 46,
+      "precision": 0.041666666666666664,
+      "recall": 0.6666666666666666,
+      "tn": 18,
+      "tp": 2
+    },
+    "threshold": 26.589241153119925
+  }
+}

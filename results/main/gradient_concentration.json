@@ -1,0 +1,53 @@
+{
+  "cell": "r64_rho0.95",
+  "last_n_steps_per_seed": 10,
+  "method": "lora",
+  "metrics_n10x3": {
+    "entropy_mean": {
+      "mean": 2.1620155666666667,
+      "n": 30,
+      "std": 0.34159814998809424
+    },
+    "grad_gini": {
+      "mean": 0.4629918,
+      "n": 30,
+      "std": 0.03127151237082436
+    },
+    "grad_top10_share": {
+      "mean": 1.0,
+      "n": 30,
+      "std": 0.0
+    },
+    "grad_top1_share": {
+      "mean": 0.6297744333333333,
+      "n": 30,
+      "std": 0.03607032671638055
+    },
+    "logits_top1_share_mean": {
+      "mean": 0.6444865,
+      "n": 30,
+      "std": 0.07264011266214394
+    },
+    "token_ce_grad_gini": {
+      "mean": 0.2870419666666667,
+      "n": 30,
+      "std": 0.0563830014910237
+    },
+    "token_ce_grad_top10_share": {
+      "mean": 0.15362030000000002,
+      "n": 30,
+      "std": 0.016796708990361668
+    },
+    "token_ce_grad_top1_share": {
+      "mean": 0.0153756,
+      "n": 30,
+      "std": 0.0016862095546132353
+    }
+  },
+  "n_records": 30,
+  "seeds": [
+    7,
+    42,
+    1337
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "baseline_k15a_sigma0": {
+    "collapse_n": "0/27",
+    "final_loss_mean": 3.153284185185185,
+    "final_loss_median": 3.980854,
+    "fire_rate": "27/27",
+    "fire_step_max": 33,
+    "fire_step_mean": 15.222222222222221,
+    "fire_step_median": 11.0,
+    "max_grad_mean": 86.59393392275473,
+    "max_grad_median": 20.53419513623463,
+    "n_cells": 27
+  },
+  "compute_summary": {
+    "gpu_lanes": 12,
+    "gpus": "H100 NVL x 2 (GPU 0 + GPU 1)",
+    "wall_seconds_estimate": 200
+  },
+  "grid": "r in {4,16,64} x rho in {0.05,0.40,0.90} x n=3 seeds {1337, 42, 7} x sigma in {0.001, 0.01, 0.1} = 81 cells",
+  "k15n_sigma_0p001": {
+    "collapse_n": "0/27",
+    "final_loss_mean": 3.1023932592592596,
+    "final_loss_median": 3.592947,
+    "fire_rate": "27/27",
+    "fire_step_max": 33,
+    "fire_step_mean": 13.925925925925926,
+    "fire_step_median": 11.0,
+    "max_grad_mean": 53.655266811094194,
+    "max_grad_median": 23.898151437860975,
+    "n_cells": 27
+  },
+  "k15n_sigma_0p01": {
+    "collapse_n": "0/27",
+    "final_loss_mean": 3.2652675925925925,
+    "final_loss_median": 3.834131,
+    "fire_rate": "27/27",
+    "fire_step_max": 33,
+    "fire_step_mean": 13.333333333333334,
+    "fire_step_median": 11.0,
+    "max_grad_mean": 92.78396691353777,
+    "max_grad_median": 23.01110175028966,
+    "n_cells": 27
+  },
+  "k15n_sigma_0p1": {
+    "collapse_n": "0/27",
+    "final_loss_mean": 3.3035917777777772,
+    "final_loss_median": 4.050266,
+    "fire_rate": "27/27",
+    "fire_step_max": 33,
+    "fire_step_mean": 12.666666666666666,
+    "fire_step_median": 11.0,
+    "max_grad_mean": 206.2965136573945,
+    "max_grad_median": 27.291494052280306,
+    "n_cells": 27
+  },
+  "mechanism_implication": "Pre-equilibrium argmax saturation is mechanism-locked at three levels: (K15f) NOT gating-driven \u2014 saturation forms within 1-2 LoRA updates after activation regardless of gate window; (K15m) NOT magnitude-driven \u2014 linear LR warmup over first {10, 20, 50} steps does not prevent saturation; (K15n) NOT initial-condition-driven \u2014 perturbing LoRA-B from N(0, sigma^2) with sigma in {0.001, 0.01, 0.1} does not prevent saturation. Combined: saturation is DIRECTION-driven, not magnitude- or initial-condition-driven. The pretrained DLM's confident argmax distribution dominates the first 1-2 LoRA forward+backward updates regardless of LoRA init, LR schedule, or activation window. This is the 8th disclosed-negative intervention in the paper and the strongest evidence yet that the pre-equilibrium mechanism is STRUCTURAL to LoRA-on-DLM at the tested 200-step PEFT horizon, not modifiable by single-axis interventions on LoRA init, magnitude, or gating.",
+  "prior_art_note": "Standard LoRA (Hu et al. 2021) initializes A Kaiming-uniform and B zero so BA=0 at step 0 (identity behavior). DoRA, AdaLoRA, rsLoRA also preserve B=0 at init. No prior published work tests nonzero LoRA-B init for DLM PEFT instability specifically. K15n fills this gap and confirms the zero-LoRA-B init is NOT a contributing factor to the saturation mechanism.",
+  "schema": "K15n adapter-init perturbation: LoRA-B initialized from N(0, sigma^2) instead of zero. Tests whether breaking the zero-init breaks rapid-post-update saturation. MDLM-OWT 130M, r in {4,16,64} x rho in {0.05,0.40,0.90} x n=3 seeds x sigma in {0.001, 0.01, 0.1} = 81 cells.",
+  "ts_utc": "2026-05-20T19:11:37Z",
+  "verdict": "NEGATIVE \u2014 fire rate 27/27 across all sigma values (0.001, 0.01, 0.1) identical to K15a baseline (sigma=0). Fire-step median 11 unchanged. Saturation is NOT initial-condition-locked. Adapter-init perturbation does NOT prevent rapid-post-update top-1 saturation."
+}

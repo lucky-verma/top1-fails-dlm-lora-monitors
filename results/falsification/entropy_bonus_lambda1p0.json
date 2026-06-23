@@ -1,0 +1,40 @@
+{
+  "baseline_dir": "data/peft_results_w7_k15_mdlm_top1_n3",
+  "baseline_matched": {
+    "collapsed_count": 0,
+    "final_loss_median": 3.980854,
+    "fire_rate": "27/27",
+    "fire_step_max": 33,
+    "fire_step_median": 11,
+    "max_grad_median": 20.53419513623463,
+    "mean_top1_traj_median": 0.5848384999999999,
+    "n_cells": 27,
+    "step0_top1_mean": 0.3585111111111111,
+    "top1_at_last_median": 0.625
+  },
+  "family": "MDLM-OWT 130M",
+  "intervention_dir": "data/peft_results_w7_k15t_mdlm_lambda1p0",
+  "intervention_stats": {
+    "collapsed_count": 0,
+    "final_loss_median": -3.604221,
+    "fire_rate": "27/27",
+    "fire_step_max": 33,
+    "fire_step_median": 12,
+    "max_grad_median": 33.7771180330139,
+    "mean_top1_traj_median": 0.6143705,
+    "n_cells": 27,
+    "step0_top1_mean": 0.3585111111111111,
+    "top1_at_last_median": 0.7109
+  },
+  "intervention_tag": "k15t_mdlm_lambda1p0",
+  "paired_stats": {
+    "paired_delta_final_loss_median": -7.0674850000000005,
+    "paired_delta_fire_step_median": 0,
+    "paired_delta_mean_top1_median": 0.008793999999999969,
+    "paired_max_grad_ratio_median": 1.0567675940184966,
+    "paired_n": 27
+  },
+  "preregistered_threshold": "WORKS: fire-rate <full + final-loss bounded. PARTIAL: fire-step >20. DOESN'T: fire-rate unchanged + fire-step ~11.",
+  "schema": "K15t entropy bonus lambda=1.0 on MDLM-OWT 130M",
+  "ts_utc": "2026-05-21T05:36:24Z"
+}

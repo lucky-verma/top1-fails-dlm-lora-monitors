@@ -1,0 +1,31 @@
+{
+  "collapse_2k": "0/27",
+  "final_loss_2k": {
+    "max": 5.09375,
+    "median": 3.0625
+  },
+  "fire_rate_2k": "27/27",
+  "lemma2_ratio_2000_over_200": {
+    "n_paired_ratios": 27,
+    "observed_mean": 3.3267003412607745,
+    "observed_median": 1.8032272098032163,
+    "observed_range_p25_p75": [
+      1.4241480456373485,
+      2.3999604675357413
+    ],
+    "predicted": 3.79,
+    "tightness_median_over_predicted": 0.4757855434836982
+  },
+  "max_grad_2k": {
+    "median": 536.9297032513063,
+    "range": [
+      118.57732455025683,
+      6232.563834917458
+    ]
+  },
+  "n_cells_200": 45,
+  "n_cells_2k": 27,
+  "n_paired": 27,
+  "schema": "K15h-extend Dream-7B 2000-step long-horizon (R2 closure + Lemma 2 cross-family verification)",
+  "ts_utc": "2026-05-20T16:20:12Z"
+}

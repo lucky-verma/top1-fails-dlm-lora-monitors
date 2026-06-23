@@ -1,0 +1,61 @@
+{
+  "baseline_k15a_warmup0": {
+    "collapse_n": "0/27",
+    "final_loss_mean": 3.153284185185185,
+    "final_loss_median": 3.980854,
+    "fire_rate": "27/27",
+    "fire_step_mean": 15.222222222222221,
+    "fire_step_median": 11.0,
+    "max_grad_mean": 86.59393392275473,
+    "max_grad_median": 20.53419513623463,
+    "n_cells": 27
+  },
+  "compute_summary": {
+    "gpu": "H100 NVL (GPU1)",
+    "gpu_lanes": 6,
+    "wall_total_seconds": 565
+  },
+  "grid": "r in {4,16,64} x rho in {0.05,0.40,0.90} x n=3 seeds {1337, 42, 7} x warmup in {10, 20, 50} = 81 cells",
+  "interpretation": "6th disclosed honest negative intervention attempt. Strengthens paper claim that pre-equilibrium argmax concentration is STRUCTURAL to LoRA-on-DLM rather than magnitude-modulable. Closes the gap between LLaDA2.0 WSD pre-training warmup (arXiv 2512.15745) and PEFT warmup: the DLM-pretraining-effective WSD recipe does NOT transfer to DLM PEFT instability.",
+  "k15m_warmup_10": {
+    "collapse_n": "0/27",
+    "final_loss_mean": 3.1953592592592592,
+    "final_loss_median": 3.89109,
+    "fire_rate": "27/27",
+    "fire_step_mean": 16.48148148148148,
+    "fire_step_median": 11.0,
+    "max_grad_mean": 123.24541417252524,
+    "max_grad_median": 21.864558663876725,
+    "n_cells": 27
+  },
+  "k15m_warmup_20": {
+    "collapse_n": "0/27",
+    "final_loss_mean": 3.151956888888889,
+    "final_loss_median": 3.862555,
+    "fire_rate": "27/27",
+    "fire_step_mean": 17.22222222222222,
+    "fire_step_median": 11.0,
+    "max_grad_mean": 53.33753803051449,
+    "max_grad_median": 22.331241255611456,
+    "n_cells": 27
+  },
+  "k15m_warmup_50": {
+    "collapse_n": "0/27",
+    "final_loss_mean": 3.173036000000001,
+    "final_loss_median": 3.864623,
+    "fire_rate": "27/27",
+    "fire_step_mean": 18.22222222222222,
+    "fire_step_median": 11.0,
+    "max_grad_mean": 46.48907392218556,
+    "max_grad_median": 25.84477243304397,
+    "n_cells": 27
+  },
+  "prior_art_motivation": [
+    "LLaDA2.0 WSD (arXiv 2512.15745)",
+    "MDM variance decomposition (arXiv 2511.18159)",
+    "HF PEFT issue #3073 LoRA NaN at first steps"
+  ],
+  "schema": "K15m linear-LR-warmup intervention vs K15a baseline (MDLM-OWT 130M, r in {4,16,64} x rho in {0.05,0.40,0.90} x n=3 seeds)",
+  "ts_utc": "2026-05-20T16:18:29Z",
+  "verdict": "NEGATIVE \u2014 fire rate unchanged at 27/27 across all warmup levels, fire-step median 11 (identical to baseline). Linear LR warmup does NOT prevent rapid-post-update top-1 saturation. Mechanism is STRUCTURAL: first 1-2 LoRA updates against confident pretrained DLM produce saturation regardless of update magnitude."
+}

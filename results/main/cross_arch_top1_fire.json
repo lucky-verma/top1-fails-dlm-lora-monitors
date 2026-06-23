@@ -1,0 +1,112 @@
+{
+  "generated_utc": "2026-05-20T05:25:04Z",
+  "headline": {
+    "collapse_rate": 0.0,
+    "fire_rate": 1.0,
+    "n_cells_total": 334,
+    "n_collapsed_total": 0,
+    "n_families": 3,
+    "n_fired_total": 334
+  },
+  "per_cohort": {
+    "dream7b_k11h_n_wave": {
+      "collapsed": 0,
+      "fired": 40,
+      "model_names": [
+        "dream"
+      ],
+      "n_cells_with_top1": 40,
+      "status": "ok"
+    },
+    "dream7b_k15b_matched_n3": {
+      "collapsed": 0,
+      "fired": 45,
+      "model_names": [
+        "dream"
+      ],
+      "n_cells_with_top1": 45,
+      "status": "ok"
+    },
+    "dream7b_lr_grid_1seed": {
+      "collapsed": 0,
+      "fired": 60,
+      "model_names": [
+        "dream"
+      ],
+      "n_cells_with_top1": 60,
+      "status": "ok"
+    },
+    "llada21_mini_3seed": {
+      "collapsed": 0,
+      "fired": 12,
+      "model_names": [
+        "llada21_mini"
+      ],
+      "n_cells_with_top1": 12,
+      "status": "ok"
+    },
+    "llada2_mini_crit12": {
+      "collapsed": 0,
+      "fired": 120,
+      "model_names": [
+        "llada2_mini"
+      ],
+      "n_cells_with_top1": 120,
+      "status": "ok"
+    },
+    "llada2_mini_full": {
+      "status": "missing"
+    },
+    "llada_moe_a1b_3seed": {
+      "collapsed": 0,
+      "fired": 12,
+      "model_names": [
+        "llada_moe_a1b"
+      ],
+      "n_cells_with_top1": 12,
+      "status": "ok"
+    },
+    "mdlm_owt_k15a_n3": {
+      "collapsed": 0,
+      "fired": 45,
+      "model_names": [
+        "mdlm_base"
+      ],
+      "n_cells_with_top1": 45,
+      "status": "ok"
+    }
+  },
+  "per_family": {
+    "Dream": {
+      "cells": 145,
+      "collapse_rate": 0.0,
+      "collapsed": 0,
+      "fire_rate": 1.0,
+      "fire_step_max": 12,
+      "fire_step_median": 11,
+      "fire_step_min": 11,
+      "fired": 145
+    },
+    "LLaDA": {
+      "cells": 144,
+      "collapse_rate": 0.0,
+      "collapsed": 0,
+      "fire_rate": 1.0,
+      "fire_step_max": 11,
+      "fire_step_median": 11,
+      "fire_step_min": 11,
+      "fired": 144
+    },
+    "MDLM": {
+      "cells": 45,
+      "collapse_rate": 0.0,
+      "collapsed": 0,
+      "fire_rate": 1.0,
+      "fire_step_max": 33,
+      "fire_step_median": 11,
+      "fire_step_min": 11,
+      "fired": 45
+    }
+  },
+  "schema_version": "1.0"
+}

@@ -1,0 +1,33 @@
+{
+  "baseline_loss_at_1000": 1.8172,
+  "cell": "r=64, rho=0.40, MDLM-OWT 130M",
+  "compute_summary": "12 runs at 1000 steps on MDLM-OWT 130M, institutional HPC 12 lanes, ~70s wall.",
+  "conditions": {
+    "baseline": {
+      "loss_at_step_1000_median": 1.8172,
+      "n_seeds": 3,
+      "top1_at_step_1000_median": 0.5547
+    },
+    "k15r_pissa-canonical": {
+      "loss_at_step_1000_median": 1.2426,
+      "n_seeds": 3,
+      "top1_at_step_1000_median": 0.7031
+    },
+    "k15s_confw1": {
+      "loss_at_step_1000_median": 2.0337,
+      "n_seeds": 3,
+      "top1_at_step_1000_median": 0.5547
+    },
+    "k15t_entb0p5": {
+      "loss_at_step_1000_median": -0.9167,
+      "n_seeds": 3,
+      "top1_at_step_1000_median": 0.6641
+    }
+  },
+  "horizon": 1000,
+  "k15r_paired_delta_at_1000": -0.5746,
+  "note": "K15r canonical PiSSA shows -0.57 paired CE improvement at 1000 steps (1.243 vs 1.817), confirming PiSSA convergence-speedup transfers to DLM PEFT. K15t loss-at-1000 is entropy-discounted (CE - 0.5*entropy); pure-CE comparison requires re-measurement. K15s confw1 slightly worse than baseline. None of the 4 conditions prevents top-1 fire at this cell.",
+  "schema": "K15u D3 long-horizon convergence comparison at canonical operating cell (r=64, rho=0.40, MDLM-OWT 130M). 4 conditions x 3 seeds = 12 runs at 1000 steps. Tests measurable downstream improvement.",
+  "ts_utc": "2026-05-21T03:27:57Z",
+  "verdict": "D3 ACHIEVED for K15r canonical PiSSA: -0.57 paired CE at 1000 steps (validated -0.43 at 200 steps from Round 9). Cross-family validation deferred (LLaDA + Dream require dlm_train.py extension; v2 follow-up)."
+}

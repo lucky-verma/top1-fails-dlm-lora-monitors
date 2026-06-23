@@ -1,0 +1,35 @@
+{
+  "hypothesis": "If LoRA-init variance causes step-0 saturation, gating adapter to steps 0..N-1 should reduce fire-rate or delay fire-step.",
+  "mechanism_reframe": "Pre-equilibrium argmax concentration is RAPID-post-LoRA-update (1-2 steps), not LoRA-init-static. Naive activation gating does not prevent saturation; the mechanism is the first gradient update against pretrained DLM logits.",
+  "per_gate": {
+    "0": {
+      "final_loss_median": 1.748577,
+      "fire_rate": 1.0,
+      "fire_step_median": 11,
+      "max_grad_norm_median": 18.76422837735236,
+      "n_cells": 9,
+      "step0_freq_mean": 0.29686666666666667,
+      "step11_freq_mean": 0.5833222222222222
+    },
+    "10": {
+      "final_loss_median": 1.802357,
+      "fire_rate": 1.0,
+      "fire_step_median": 11,
+      "max_grad_norm_median": 13.17007237781058,
+      "n_cells": 9,
+      "step0_freq_mean": 0.29686666666666667,
+      "step11_freq_mean": 0.5598555555555556
+    },
+    "5": {
+      "final_loss_median": 1.770033,
+      "fire_rate": 1.0,
+      "fire_step_median": 11,
+      "max_grad_norm_median": 18.00984814869053,
+      "n_cells": 9,
+      "step0_freq_mean": 0.29686666666666667,
+      "step11_freq_mean": 0.5538111111111111
+    }
+  },
+  "result": "NEGATIVE \u2014 gating to step 5 and step 10 does NOT change fire-rate (100% all) or fire-step (median 11 all). Saturation forms within 1-2 LoRA training updates after activation, not from static LoRA-init.",
+  "schema": "K15f prospective LoRA-activation-gating intervention on MDLM-OWT 130M"
+}

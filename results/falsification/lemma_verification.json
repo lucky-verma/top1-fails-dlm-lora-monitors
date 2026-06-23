@@ -1,0 +1,38 @@
+{
+  "lemma_1": {
+    "n_cells": 117,
+    "observed_metric": "per-cell variance of grad_norm^2 over training trajectory (steps 10+)",
+    "predictor": "H(rho) * r (H_logit absorbed in C_fam)",
+    "spearman_p": 0.9788399852712999,
+    "spearman_rho": 0.0024786850102580314,
+    "verdict": "PARTIAL"
+  },
+  "lemma_2": {
+    "n_paired_cells": 27,
+    "observed_mean_ratio": 1.9406438711077323,
+    "observed_median_ratio": 1.367696113093879,
+    "predicted_ratio": 3.7875955297207935,
+    "verdict": "SUBLINEAR (bound is loose; trajectory max grows slower than sqrt T log T)"
+  },
+  "lemma_3": {
+    "per_family_max_grad": {
+      "dream": {
+        "mean": 373.17693534445283,
+        "median": 173.05096230999501,
+        "n": 105
+      },
+      "llada2_mini": {
+        "mean": 35.81243120412015,
+        "median": 26.597634226915822,
+        "n": 120
+      },
+      "mdlm_base": {
+        "mean": 108.63774836609646,
+        "median": 25.351348113638835,
+        "n": 72
+      }
+    },
+    "verdict": "FAMILY-SPECIFIC scaling confirmed: family medians differ by an order of magnitude or more, consistent with family-specific C_fam."
+  },
+  "schema": "Numerical verification of Lemmas 1-3 on K15 corpus"
+}

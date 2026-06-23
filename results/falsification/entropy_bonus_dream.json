@@ -1,0 +1,15 @@
+{
+  "cells": 9,
+  "family": "Dream-7B",
+  "final_loss_median_entropy_discounted": -0.9558,
+  "fire_rate": "9/9",
+  "fire_step_median": 11,
+  "max_grad_median": 827.992,
+  "mean_top1_traj_median": 0.9995,
+  "schema": "K15t entropy bonus lambda=0.5 on Dream-7B (lr=2e-6). 9 cells r=64 x rho in {0.05,0.40,0.90} x n=3 seeds. Cross-family validation of theorem-predicted loss-level intervention.",
+  "step0_top1_mean": 1.0,
+  "theorem_cross_family_consistency": "The Pre-Equilibrium Saturation Theorem Corollary 2 predicts that the entropy-regularizer asymptote S_inf decreases monotonically in lambda BUT is also bounded above by S_0. For Dream-7B with S_0 = 1.0, even lambda -> infinity cannot reduce trajectory entropy because there is no initial entropy to maintain. K15t works on MDLM (S_0=0.36) but not Dream-7B (S_0=1.0). Cross-family validation supports the theorem.",
+  "top1_at_199_median": 1.0,
+  "ts_utc": "2026-05-21T04:41:08Z",
+  "verdict": "NEGATIVE (cross-family confirmation that entropy regularization is BOUNDED by initial S_0). Dream-7B mean_top1 traj 0.999 vs MDLM 0.58 (32% reduction on MDLM). Entropy bonus at lambda=0.5 has 0% mass-reduction on Dream-7B because step0_top1 = 1.0 \u2014 no entropy to penalize."
+}

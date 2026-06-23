@@ -1,0 +1,17 @@
+{
+  "cells": 9,
+  "compute_summary": "LLaDA-MoE-A1B 7B/1.4B, lr=1e-4, 200 steps, institutional HPC GPU1, ~14 min wall for 9 cells in serial mode (single lane due to MoE memory).",
+  "cross_family_implication": "Cross-family S_0 values now spans the saturation spectrum: MDLM 0.36 (low room) -> LLaDA 0.83 -> MoE-A1B 0.95 -> Dream 1.0 (zero room). PiSSA init-direction intervention fails uniformly across all four vendors. Pre-equilibrium saturation is structurally independent of LoRA initialization direction in the convergence-preserving regime.",
+  "family": "LLaDA-MoE-A1B 7B/1.4B",
+  "final_loss_median": 2.0312,
+  "fire_rate": "9/9",
+  "fire_step_median": 11,
+  "intervention_dir": "data/peft_results_w7_k15r_llada_moe_a1b",
+  "max_grad_median": 730.6553,
+  "mean_top1_traj_median": 0.997,
+  "schema": "K15r canonical PiSSA + W-subtraction on LLaDA-MoE-A1B (lr=1e-4, family default). 9 cells r=64 x rho in {0.05,0.40,0.90} x n=3 seeds. Cross-family validation of init-direction axis on 4th vendor.",
+  "step0_top1_mean": 0.9462,
+  "top1_at_last_median": 1.0,
+  "ts_utc": "2026-05-21T06:00:00Z",
+  "verdict": "NEGATIVE on saturation prevention (fire 9/9, fire-step 11). Step0_top1 = 0.95 confirms MoE-A1B is near-saturated at step 0; mean trajectory reaches 0.997 by step 200. Theorem-consistent: high S_0 implies S_t stays high regardless of init-direction intervention."
+}

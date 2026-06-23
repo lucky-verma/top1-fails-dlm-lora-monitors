@@ -1,0 +1,17 @@
+{
+  "cells": 9,
+  "compute_summary": "LLaDA-MoE-A1B 7B/1.4B, lr=1e-4, 200 steps, institutional HPC GPU1, ~20 min wall for 9 cells (after K15r chain freed VRAM).",
+  "family": "LLaDA-MoE-A1B 7B/1.4B",
+  "final_loss_median_entropy_discounted": -1.5675,
+  "fire_rate": "9/9",
+  "fire_step_median": 11,
+  "intervention_dir": "data/peft_results_w7_k15t_llada_moe_a1b",
+  "max_grad_median": 336.6297,
+  "mean_top1_traj_median": 0.9974,
+  "schema": "K15t entropy bonus lambda=0.5 on LLaDA-MoE-A1B 7B/1.4B (lr=1e-4). 9 cells r=64 x rho in {0.05,0.40,0.90} x n=3 seeds. Cross-family validation of loss-level intervention on 4th vendor.",
+  "step0_top1_mean": 0.9705,
+  "theorem_cross_family_consistency": "MoE-A1B S_0 = 0.95 leaves only (1-S_0) = 0.05 room for the entropy regularizer to act on. The empirical 0% reduction is consistent with the theorem-bounded efficacy framing in Corollary 2 IF baseline saturation already occurs. The cross-family pattern now spans S_0 = 0.36 (MDLM, refutes Corollary 2 directly), 0.83 (LLaDA, pending), 0.95 (MoE-A1B), 1.00 (Dream).",
+  "top1_at_last_median": 1.0,
+  "ts_utc": "2026-05-21T06:25:00Z",
+  "verdict": "NEGATIVE (cross-family confirmation of K15t MDLM result on 4th vendor). Entropy bonus at lambda=0.5 fails to prevent saturation on LLaDA-MoE-A1B; top-1 mass essentially unchanged from K15r PiSSA baseline (0.997 vs 0.997)."
+}

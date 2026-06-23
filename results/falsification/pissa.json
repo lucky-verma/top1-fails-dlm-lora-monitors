@@ -1,0 +1,35 @@
+{
+  "baseline_k15a_matched_27": {
+    "final_loss_median": 3.9809,
+    "fire_rate": "27/27",
+    "fire_step_median": 11,
+    "max_grad_median": 20.5342,
+    "n_cells": 27,
+    "step0_top1_mean": 0.3585
+  },
+  "compute_summary": "MDLM-OWT 130M, batch 1, lr 1e-4, 200 steps, institutional HPC 2x H100 NVL, 12 lanes total, wall time ~1.5 min for 27 cells.",
+  "grid": "r in {4,16,64} x rho in {0.05,0.40,0.90} x n=3 seeds {1337, 42, 7} = 27 cells",
+  "intervention_stats": {
+    "collapse_n": "0/27",
+    "final_loss_median": 5.8953,
+    "fire_rate": "27/27",
+    "fire_step_max": 166,
+    "fire_step_median": 33,
+    "max_grad_median": 4624433.4911,
+    "n_cells": 27,
+    "paired_baseline_n": 27,
+    "paired_delta_final_loss_median": 3.1558,
+    "paired_delta_fire_step_median": 22,
+    "paired_delta_step0_median": 0.0625,
+    "paired_max_grad_ratio_median": 203586.441,
+    "step0_top1_mean": 0.3704,
+    "step0_top1_std": 0.2602
+  },
+  "mechanism_implication": "Pre-equilibrium saturation is direction-driven, with init-direction alignment delaying but not preventing the rapid-post-update concentration. Spectral-aligned init perturbs initial-state but masked-CE gradient still drives toward argmax concentration. PiSSA without lr rescaling is gradient-unstable on DLM PEFT.",
+  "preregistered_threshold": "WORKS: step-0 top-1 freq <= 0.58 at r=64 rho in {0.40,0.90} AND fire-rate <27/27. PARTIAL: fire-step median delays beyond 11. DOESN'T: fire 27/27 + fire-step 11.",
+  "prior_art_note": "PiSSA (Meng et al. 2024, NeurIPS 2024 spotlight) proposed for AR LoRA convergence; we test orthogonal hypothesis on DLM PEFT top-1 saturation. PiSSA's reported faster-convergence benefit is for AR fine-tuning; on DLM PEFT, the spectral-aligned init delays saturation but does not prevent it and breaks gradient stability under standard lr.",
+  "schema": "K15o PiSSA-style spectral init intervention: A=sqrt(S)*V^T, B=U*sqrt(S) (truncated to rank r) of base weight SVD. Tests INIT-DIRECTION axis. MDLM-OWT 130M, r in {4,16,64} x rho in {0.05,0.40,0.90} x n=3 seeds = 27 cells.",
+  "ts_utc": "2026-05-21T01:43:13Z",
+  "verdict": "PARTIAL",
+  "verdict_explanation": "PARTIAL: fire-step median delayed 11 -> 33 (3x) showing direction-init alignment with pretrained spectral structure modulates saturation TIMING. But fire-rate stays 27/27 (saturation still fires, just later) AND max-grad explodes ~203586x vs baseline (PiSSA init norm = sqrt(S) of base weight, large; first gradient step overshoots wildly without lr rescaling). Final-loss also worse (+3.16 paired). NOT a working fix. Adds mechanism nuance: direction-init affects WHEN, not WHETHER."
+}

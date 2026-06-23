@@ -1,0 +1,15 @@
+{
+  "cells": 9,
+  "cross_family_implication": "Dream-7B pretrained model has hyper-concentrated argmax distribution on masked input (step0_top1 = 1.0 vs MDLM 0.36 vs LLaDA 0.83). This validates the theorem prediction that initial-condition S_0 bounds intervention efficacy: where S_0 is already 1, no intervention preserving training convergence can change the fire-rate.",
+  "family": "Dream-7B",
+  "final_loss_median": 2.25,
+  "fire_rate": "9/9",
+  "fire_step_median": 11,
+  "max_grad_median": 2662.9476,
+  "mean_top1_traj_median": 0.9995,
+  "schema": "K15r canonical PiSSA + W-subtraction on Dream-7B (lr=2e-6, family-canonical). 9 cells r=64 x rho in {0.05,0.40,0.90} x n=3 seeds. Cross-family validation of init-direction axis.",
+  "step0_top1_mean": 1.0,
+  "top1_at_199_median": 1.0,
+  "ts_utc": "2026-05-21T04:41:08Z",
+  "verdict": "NEGATIVE on saturation prevention (fire 9/9, fire-step 11). Step0_top1 = 1.0 confirms Dream-7B is fully saturated at step 0, leaving no room for any single-axis intervention to operate. Theorem-consistent: S_0 = 1 implies S_t stays at 1 regardless of intervention."
+}

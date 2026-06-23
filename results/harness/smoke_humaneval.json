@@ -1,0 +1,67 @@
+{
+  "benchmark": "humaneval",
+  "config": {
+    "denoise_steps": 32,
+    "device": "cuda",
+    "dtype": "auto",
+    "eval_mask_ratio": 0.4,
+    "max_length": 1024,
+    "max_new_tokens": 192,
+    "mock_model": true,
+    "model_name": "llada2_mini",
+    "qlora": false,
+    "temperature": 0.0
+  },
+  "created_at_unix": 1777937612.997,
+  "data_source": "fixture:fallback_humaneval",
+  "gpu_smoke_pending": true,
+  "mode": "mock",
+  "paper_evidence": false,
+  "records": [
+    {
+      "completion": "    return a + b\n",
+      "entry_point": "add",
+      "error": "",
+      "passed": true,
+      "task_id": "fixture/add"
+    },
+    {
+      "completion": "    return None\n",
+      "entry_point": "subtract",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/humaneval_vcjdhb9i/candidate.py\", line 9, in <module>\n    check(subtract)\n  File \"/tmp/humaneval_vcjdhb9i/candidate.py\", line 6, in check\n    assert candidate(5, 3) == 2\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError",
+      "passed": false,
+      "task_id": "fixture/subtract"
+    },
+    {
+      "completion": "    return a + b\n",
+      "entry_point": "multiply",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/humaneval_owzoxamq/candidate.py\", line 9, in <module>\n    check(multiply)\n  File \"/tmp/humaneval_owzoxamq/candidate.py\", line 6, in check\n    assert candidate(4, 3) == 12\n           ^^^^^^^^^^^^^^^^^^^^^\nAssertionError",
+      "passed": false,
+      "task_id": "fixture/multiply"
+    },
+    {
+      "completion": "    return None\n",
+      "entry_point": "is_even",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/humaneval_cs0uiy9w/candidate.py\", line 9, in <module>\n    check(is_even)\n  File \"/tmp/humaneval_cs0uiy9w/candidate.py\", line 6, in check\n    assert candidate(2) is True\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError",
+      "passed": false,
+      "task_id": "fixture/is_even"
+    },
+    {
+      "completion": "    return a + b\n",
+      "entry_point": "max_two",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/humaneval_fdra9pij/candidate.py\", line 9, in <module>\n    check(max_two)\n  File \"/tmp/humaneval_fdra9pij/candidate.py\", line 6, in check\n    assert candidate(7, 3) == 7\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError",
+      "passed": false,
+      "task_id": "fixture/max_two"
+    }
+  ],
+  "summary": {
+    "correct": 1,
+    "n": 5,
+    "non_trivial_score": true,
+    "score": 0.2,
+    "sec_per_example": 0.013,
+    "under_30s_per_example": true,
+    "wall_time_s": 0.065
+  },
+  "unsafe_exec_enabled": true
+}
