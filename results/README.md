@@ -1,7 +1,8 @@
 # Results artifacts — codebook
 
 Sanitized aggregate JSON/CSV that back the tables and figures in *"When Top-1
-Fails: Calibrating LoRA Monitors for Masked Diffusion LMs."* These are
+Fails: Calibrating LoRA Monitors for Masked Diffusion LMs"*,
+[arXiv:2606.24119](https://arxiv.org/abs/2606.24119). These are
 group-level result artifacts (per-cohort summaries, bootstrap CIs, sweeps); raw
 per-run cells are not part of this release. Files keep numeric diagnostics only;
 local paths, host names, checkpoint/adapter paths, W&B metadata, and internal

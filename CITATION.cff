@@ -7,8 +7,15 @@ authors:
   - family-names: Yadav
     given-names: Pratik
 year: 2026
+date-released: "2026-06-23"
+doi: "10.48550/arXiv.2606.24119"
 repository-code: "https://github.com/lucky-verma/top1-fails-dlm-lora-monitors"
-url: "https://github.com/lucky-verma/top1-fails-dlm-lora-monitors"
+url: "https://arxiv.org/abs/2606.24119"
+identifiers:
+  - type: doi
+    value: "10.48550/arXiv.2606.24119"
+  - type: url
+    value: "https://arxiv.org/abs/2606.24119"
 keywords:
   - LoRA
   - masked diffusion language models
